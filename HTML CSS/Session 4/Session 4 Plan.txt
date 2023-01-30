@@ -1,0 +1,13 @@
+0. Review of the homeworks
+1. Questions from last session
+2. Review of the last session
+3. Building an appointment form
+4. Tables
+    a. Displaying data with tables
+5. State selection with css
+6. Build an admin dashboard 
+
+Links 
+<script src="https://kit.fontawesome.com/5cc0fd6a54.js" crossorigin="anonymous"></script>
+https://html5up.net/hyperspace
+

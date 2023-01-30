@@ -1,0 +1,30 @@
+/* Selecting by id */
+#main-title {
+  color: #f1f2f3;
+  background-color: lightseagreen;
+}
+
+.sub-title {
+  color: white;
+  font-size: 2rem;
+  background-color: lightcoral;
+}
+
+/* Selecting by class */
+
+.blue-p {
+  color: royalblue;
+}
+.large-text {
+  font-size: 2rem;
+  color: green;
+}
+.red-p {
+  color: red;
+  /* background-color: blue; */
+}
+
+/* Selecting by tag */
+p {
+  border: 2px solid green;
+}

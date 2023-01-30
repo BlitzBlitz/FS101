@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.page {
+  border: 2px solid red;
+  display: flex;
+}
+.left,
+.right {
+  border: 4px dotted green;
+  width: 50%;
+}
+.left {
+  background-color: lightblue;
+  padding: 1em;
+}
+
+img {
+  width: 40px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+.brand img {
+  background-color: transparent;
+  margin-right: 0.3em;
+}
+.brand span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+.title {
+  font-size: 2rem;
+  color: white;
+  width: 30%;
+  margin-top: 1em;
+  line-height: 3rem;
+}
+.text-large {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.right {
+  padding: 1.5em;
+}
+
+.appoint-p {
+  color: rgb(142, 142, 142);
+  margin: 1em 0;
+}
+
+.service-container {
+  display: flex;
+  margin: 1em 0;
+}
+.service-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  width: 25%;
+}
+.service-icon img {
+  background-color: #0075fd;
+  border-radius: 50%;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  width: 70px;
+}
+.input-row {
+  display: flex;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0.5em;
+}
+.input-group p {
+  margin-bottom: 0.5em;
+}
+.input-field {
+  border: 1px solid grey;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5em;
+}
+.input-field img {
+  width: 15px;
+  margin-right: 0.5em;
+}
+
+.input-field input {
+  padding: 0.5em;
+  border: 0;
+  width: 90%;
+}
+
+.input-field input:focus {
+  border: 0;
+}
+textarea {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.btn {
+  border: 0;
+  margin-left: 0.5em;
+  padding: 1em 4em;
+  background-color: #0075fd;
+  color: white;
+  border-radius: 5px;
+}

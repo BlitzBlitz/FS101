@@ -1,0 +1,37 @@
+0. Setting up OBS Studio
+1. Review of the last session   
+    a. Checking homeworks and taking questions
+    b. Review of Box Model
+2. How does the development of a website works
+    a. Steps from design to implementation
+    b. dos and donts 
+3. Positioning 
+    a. Using flex to make life easy
+4. Build a website to practice
+    a. ! include css variables for colors
+    b. color picker extention
+
+
+Links 
+<script src="https://kit.fontawesome.com/5cc0fd6a54.js" crossorigin="anonymous"></script>
+https://html5up.net/hyperspace
+
+
+Positioning 
+    1. Go to the container of the element 
+    2. I display the container as flex
+    3. I use justify-content for positioning elements left-right
+    4. I use align-items for positioning elements up-down
+What happens when I use flex
+    1. Every element becomes an inline element
+    (it will occupy only the width of the content)
+        justify-content: flex-start;
+    2. The hight of every element becomes as the height of the container    
+        align-items: stretch;
+    3. Every element is aligned in row
+        flex-direction: row
+
+How does the development of a website works?
+    1. Dividing the template into containers
+    2. Creating the html doc by putting all the containers and elements
+    3. Styling the html

@@ -1,0 +1,21 @@
+0. Review of the homeworks
+1. Questions from last session
+2. Review of the last session
+3. What went good and bad for the last week
+4. Forms and inputs
+    a. Form What, Why, How
+    <select>
+5. Buttons and borders 
+6. Build a loggin and sign-up page
+    a. I build the loggin page with you help
+    b. You build the sign-up page with my help
+7. Building an appointment form
+
+Links 
+<script src="https://kit.fontawesome.com/5cc0fd6a54.js" crossorigin="anonymous"></script>
+https://html5up.net/hyperspace
+
+Forms:
+    What: Formulars that we use to collect data from users
+    Why:  To collect data from the users
+    How:  Using <form> <input> <select>

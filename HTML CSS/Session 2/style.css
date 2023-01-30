@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid red;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  flex-direction: column;
+}
+h1,
+p {
+  border: 2px dotted green;
+}

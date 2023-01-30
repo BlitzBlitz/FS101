@@ -1,0 +1,24 @@
+.tabel {
+  border: 2px solid red;
+  width: 800px;
+  margin: 10em auto;
+  color: lightgray;
+}
+
+.tabel thead tr {
+  text-align: left;
+}
+
+/* .main-column */
+.tabel tbody tr td:first-child {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.tabel tbody tr td:first-child img {
+  margin-right: 0.3em;
+}
+
+body {
+  border-left: 2px solid blue;
+}

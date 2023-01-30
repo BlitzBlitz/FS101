@@ -1,0 +1,36 @@
+/* Style reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-title,
+.main-content,
+span {
+  border: 2px solid green;
+}
+
+.main-title,
+.main-content {
+  width: 100px;
+}
+
+span {
+  width: 100px;
+  margin: 5px;
+}
+
+/* Spacing */
+.main-title {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  border: 0;
+  background-color: lightgreen;
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
