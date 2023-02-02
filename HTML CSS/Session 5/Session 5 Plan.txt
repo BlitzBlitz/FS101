@@ -1,0 +1,29 @@
+0. Review of the homeworks
+1. Questions from last session
+2. Review of the last session
+3. Using GIT and Slack for better collaburation
+4. Units in depth
+    a. Fixed Units
+        px, cm, mm
+    b. Relative
+        rem     -> root element(<html>) font-size (16px by default)
+        em      -> reltaive to the font-size of the element
+
+        vw      -> relative to the view-port(screen) width
+        vh      -> relative to the view-port(screen) height
+
+        %       -> relative to parent element width
+    
+    c. Breakpoints
+
+5. Thinking Responsivly
+        a. Designing by keeping in mind the other screens
+        b. Mobile first
+
+6. Making our previous projects responsive
+
+
+Links
+    https://www.youtube.com/watch?v=N5wpD9Ov_To
+    https://zellwk.com/blog/media-query-units/
+    https://www.youtube.com/watch?v=-GR52czEd-0

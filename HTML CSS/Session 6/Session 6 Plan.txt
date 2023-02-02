@@ -1,0 +1,16 @@
+0. Review of the homeworks
+1. Questions from last session
+2. Review of the last session
+3. Discussing about the course project (Real Estate) and how we are going to tackle it
+4. Practicing GIT with uploading projects, branching, pull requests
+5. Hidding elements when going into smaller screens
+
+6. Intro to Grid layout 
+7. Grid layout project
+8. Responsive Grid layout 
+
+
+Links
+    https://www.youtube.com/watch?v=N5wpD9Ov_To
+    https://zellwk.com/blog/media-query-units/
+    https://www.youtube.com/watch?v=-GR52czEd-0
