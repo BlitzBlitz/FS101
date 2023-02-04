@@ -3,16 +3,18 @@
 2. Review of the last session
 3. Using GIT and Slack for better collaburation
 4. Units in depth
-    a. Fixed Units
+    a. Fixed Units      (width of icons, border-radius, border-width)
         px, cm, mm
-    b. Relative
-        rem     -> root element(<html>) font-size (16px by default)
+        
+    b. Relative Units   (width of elements, margin, padding)    
+
+        rem     -> font-size of root element(<html>)  (16px by default)
         em      -> reltaive to the font-size of the element
 
         vw      -> relative to the view-port(screen) width
         vh      -> relative to the view-port(screen) height
 
-        %       -> relative to parent element width
+        %       -> relative to width of the parent element 
     
     c. Breakpoints
 
