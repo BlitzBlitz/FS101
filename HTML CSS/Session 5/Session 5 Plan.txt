@@ -46,3 +46,10 @@ Git Steps:
         e. Test the feature
         f. Commit the changes   (Locally)
         g. Sync changes         (Remotlly)
+
+Shifting from larger to smaller screens:
+    a. Design by keeping in mind how are you going to display your content in smaller screens
+    b. SHIFT THE DIRECTION OF THE CONATINERS ROW->COLUMN
+    c. HIDE SOME ELEMENTS IN SMALLER SCREENS (navbar/sidebar)
+        show a button to pop these elements/containers up
+    d. Keep you width, font-size, margin and padding defined by the RELATIVE UNITS
