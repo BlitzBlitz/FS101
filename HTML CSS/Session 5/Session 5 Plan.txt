@@ -27,3 +27,20 @@ Links
     https://www.youtube.com/watch?v=N5wpD9Ov_To
     https://zellwk.com/blog/media-query-units/
     https://www.youtube.com/watch?v=-GR52czEd-0
+
+
+Git Steps:
+    Creating a Repository
+        a. Open the folder
+        b. Go to sorce controll extentention
+        c. Publish Repo (after Login)
+        d. Initialize the main branch
+
+    Adding Features
+        a. Have a feature in your mind that you want to implement
+        b. Create a new branch for this feature  (Locally)
+        c. Publish the branch in the github repo (Remotlly)
+        d. Start to implement the feature
+        e. Test the feature
+        f. Commit the changes   (Locally)
+        g. Sync changes         (Remotlly)
