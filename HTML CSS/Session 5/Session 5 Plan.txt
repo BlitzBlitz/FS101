@@ -19,7 +19,7 @@
     c. Breakpoints
 
 5. Thinking Responsivly
-        a. Designing by keeping in mind the other screens
+        a. Designing for larger screens by keeping in mind the smaller screens
         b. Mobile first
 
 6. Making our previous projects responsive

@@ -15,6 +15,8 @@
 }
 .left {
   background-color: lightblue;
+  background-image: url("./back.png");
+  background-size: cover;
   padding: 1em;
 }
 
@@ -32,11 +34,11 @@ img {
 .brand span {
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
+  color: #0075fd;
 }
 .title {
   font-size: 2rem;
-  color: white;
+  color: #0075fd;
   width: 30%;
   margin-top: 1em;
   line-height: 3rem;
@@ -120,4 +122,58 @@ textarea {
   background-color: #0075fd;
   color: white;
   border-radius: 5px;
+}
+.btn {
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .page {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .left {
+    display: none;
+    padding: 5em 1em;
+  }
+  .right {
+    background-image: url("./back.png");
+    background-size: cover;
+  }
+
+  .title {
+    width: 70%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .page {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .left {
+    padding: 7em 2em;
+  }
+  .right {
+    padding: 2em;
+  }
+}
+@media (min-width: 769px) and (max-width: 950px) {
+  .page {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .left {
+    padding: 10em 4em;
+  }
+  .right {
+    padding: 2em 4em;
+  }
 }
