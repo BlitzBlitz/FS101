@@ -8,8 +8,8 @@
         
     b. Relative Units   (width of elements, margin, padding)    
 
-        rem     -> font-size of root element(<html>)  (16px by default)
-        em      -> reltaive to the font-size of the element
+        rem     -> font-size of root element(<html>)  (16px by default)  10rem => 10x16px = 160px
+        em      -> reltaive to the font-size of the element             
 
         vw      -> relative to the view-port(screen) width
         vh      -> relative to the view-port(screen) height
@@ -53,3 +53,8 @@ Shifting from larger to smaller screens:
     c. HIDE SOME ELEMENTS IN SMALLER SCREENS (navbar/sidebar)
         show a button to pop these elements/containers up
     d. Keep you width, font-size, margin and padding defined by the RELATIVE UNITS
+
+Shifting from non-responsive to responsive Design
+    a. check all your widths and make sure they are set with relative units of mesaurment
+    b. check the font-size, set all of them with "rem"
+    c. check all the margin and padding, set all of them with "em"
