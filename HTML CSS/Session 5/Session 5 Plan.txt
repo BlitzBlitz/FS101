@@ -56,5 +56,6 @@ Shifting from larger to smaller screens:
 
 Shifting from non-responsive to responsive Design
     a. check all your widths and make sure they are set with relative units of mesaurment
-    b. check the font-size, set all of them with "rem"
-    c. check all the margin and padding, set all of them with "em"
+    b. Try to get rid of all the hights wherever possible
+    c. check the font-size, set all of them with "rem"
+    d. check all the margin and padding, set all of them with "em"
