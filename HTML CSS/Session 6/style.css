@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif
+  
 }
 
 
@@ -16,6 +17,7 @@
   z-index: 999;
   border-bottom: 1px solid lightgrey;
   background-color: white;
+  font-family: monospace;
 }
 
 
@@ -109,7 +111,7 @@
 
 .main-mid{
 display: flex;
-margin: 8em;
+margin: 5em auto;
 max-width: 80%;
 padding-top: 2em;
 justify-content: center;
@@ -131,12 +133,18 @@ justify-content: center;
 
 background-color: black;
 color: white;
-padding: 1em;
+padding: 0.3em;
 left: 0;
 top: 0;
-width: 15%;
+/* width: 15%; */
 font-weight: bold;
 font-size: 1.2rem;
+position:absolute; 
+top:0; 
+left:0;
+font-family: monospace;
+
+
 }
 
 
@@ -146,6 +154,7 @@ font-size: 1.2rem;
   gap: 1em;
   /* padding: 1.5em; */
   padding-top: 3em;
+  
 }
 
 .main-news:nth-child(3) {
@@ -154,22 +163,35 @@ font-size: 1.2rem;
 }
 
 .main-news img, h2{
- margin-bottom: 1em;
+ margin-bottom: 2em;
   
 }
 
 .main-news h2{
   margin-top: 0.6em;
-   
-   
- }
+  
+    }
 
-.main-news span, a{
-  font-size: 1.5rem;
+.main-news a{
+  font-size: 1rem;
   font-weight: bold;
+
   
-  
-}
+  }
+
+  .main-span{
+    font-size: 1rem;
+    font-weight: bold;
+    
+    
+    
+    }
+
+  .main-news  a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    }
 
 .main-news h2{
   font-size: 2rem;
@@ -177,7 +199,7 @@ font-size: 1.2rem;
 
 .main-news h1 {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.3rem;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
 }
@@ -185,7 +207,7 @@ font-size: 1.2rem;
 .main-news p {
 
 font-size: 1.3rem;
-margin-bottom: 0.2em;
+margin-bottom: 0.8em;
 }
 
 .main-news h1:hover{
@@ -219,12 +241,29 @@ justify-content: space-around;
 width: 30%;
 border-top: 3px solid black;
 margin-left: 5em;
-
+position: relative;
 }
 
-.main-right span{
+.main-today2{
+
+  background-color: rgb(11, 10, 10);
+  color: white;
+  padding: 0.3em;
+  left: 0;
+  top: 0;
+  width: 8em;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position:absolute; 
+  top:0; 
+  left:0;
+  font-family: monospace;
+  
+
+  }
+/* .main-right span{
   width: 30%;
-}
+} */
 
 
 .side-image img {
@@ -242,6 +281,7 @@ margin-left: 5em;
   /* padding: 0.5em; */
   /* margin: 1em; */
   border-bottom: 1px solid lightgray;
+  font-weight: bold;
   
 }
 
@@ -269,8 +309,119 @@ margin-left: 5em;
 
 }
 
-@media (max-width: 480px) {
+
+.trending{
+  display: flex;
+  /* border: 2px solid red; */
+  border-top: 3px solid black;
+  position: relative;
+  margin: 5em auto;
+  justify-content: center;
+  max-width: 80%;
+  padding: 4em;
+  
+  }
+
+  .trending-main{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid  blue; */
+    margin-left: -4em;
+   
+    
+  }
+  
+  .trending h3{
+  
+    /* background-color: rgb(11, 10, 10);
+    color: white; */
+    /* padding: 0.3em; */
+    left: 0;
+    top: 0;
+    width: 40em;
+    font-weight: bold;
+    font-size: 1.3rem;
+    position:absolute; 
+    font-family: monospace;
+    
+  }
+
+  .trending-p{
+  
+    background-color: rgb(11, 10, 10);
+    color: white;
+    font-family: monospace;
+  }
+  .trending-img1{
+    width: 20em;
+    height: auto;
+    object-fit: cover;
+  }
+
+ .trending-topic{
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+  font-family: monospace;
+ }
+
+ .trending-main h2{
+  margin-top: 0.5em;
+  width: 18em;
+ }
+
+ .trending-main p{
+  font-size: 1.3rem;
+  margin-top: -0.8em;
+
+ }
+  .trending1{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid tomato; */
+    width: 25%;
+  }
+  .trending2{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid tomato; */
+    width: 25%;
+  }
+  .trending3{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    /* border: 2px solid tomato; */
+  }
+  .trending4{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    /* border: 2px solid tomato; */
+  }
+
+
  
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+  .logo-area img{
+
+    width:18em;
+  }
+
+  .logo-area i{
+
+    
+  }
   .logo-area ul {
     display: none;
   }
@@ -286,7 +437,7 @@ margin-left: 5em;
  
   margin-right: 8em;
   padding: 0.7em;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
   
   
@@ -315,8 +466,8 @@ margin-left: 5em;
   flex-direction: column;
 }
 
-.main-img {
-  width: 26em;
+.trending-img {
+  width: 21em;
   height: auto; 
   object-fit: cover;
 }
