@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: monospace
   
 }
 
@@ -17,7 +17,7 @@
   z-index: 999;
   border-bottom: 1px solid lightgrey;
   background-color: white;
-  font-family: monospace;
+  
 }
 
 
@@ -37,13 +37,14 @@
 .logo-area ul{
   display: flex;
   list-style: none;
+  
 
 }
 .logo-area a{
   text-decoration: none;
   color: black;
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-size: 0.6rem;
+  
   
 }
 
@@ -142,7 +143,7 @@ font-size: 1.2rem;
 position:absolute; 
 top:0; 
 left:0;
-font-family: monospace;
+
 
 
 }
@@ -152,7 +153,6 @@ font-family: monospace;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
-  /* padding: 1.5em; */
   padding-top: 3em;
   
 }
@@ -163,28 +163,27 @@ font-family: monospace;
 }
 
 .main-news img, h2{
- margin-bottom: 2em;
+ margin-bottom: 1.5em;
   
 }
 
 .main-news h2{
-  margin-top: 0.6em;
+  margin-top: 0.7em;
+  margin-bottom: 1em;
   
     }
 
 .main-news a{
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: bold;
 
   
   }
 
-  .main-span{
+  .main-news span{
     font-size: 1rem;
     font-weight: bold;
-    
-    
-    
+           
     }
 
   .main-news  a{
@@ -194,20 +193,23 @@ font-family: monospace;
     }
 
 .main-news h2{
-  font-size: 2rem;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-news h1 {
   font-weight: bold;
-  font-size: 2.3rem;
+  font-size: 1.4rem;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-news p {
 
-font-size: 1.3rem;
+font-size: 1rem;
 margin-bottom: 0.8em;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-news h1:hover{
@@ -229,9 +231,14 @@ margin-bottom: 0.8em;
   
 }
 .main-img{
+  width: 90%;
+   object-fit: cover;
+}
+
+.trending-img{
   width: 95%;
-  height: 70%;
   object-fit: cover;
+
 }
 .main-right{
 display: flex;
@@ -242,6 +249,8 @@ width: 30%;
 border-top: 3px solid black;
 margin-left: 5em;
 position: relative;
+padding-top: 2.5em;
+
 }
 
 .main-today2{
@@ -259,27 +268,23 @@ position: relative;
   left:0;
   font-family: monospace;
   
+  
 
   }
-/* .main-right span{
-  width: 30%;
-} */
 
 
 .side-image img {
 
-  width: 7em;
-  height: 7em;
+  width: 50%;
+  /* height: 7em; */
 
 }
 
 .side-news{
   display: flex;
   width: 90%;
-  justify-content: space-between;
+  justify-content: stretch;
   /* border: 2px solid blue; */
-  /* padding: 0.5em; */
-  /* margin: 1em; */
   border-bottom: 1px solid lightgray;
   font-weight: bold;
   
@@ -289,19 +294,28 @@ position: relative;
   display: flex;
   flex-direction: column;
   /* border: 2px solid red; */
+  width: 60%;
   
+}
+
+.side-image{
+  display: flex;
+  /* border: 2px solid green; */
+  width: 40%;
 }
 
 .side-subnews a{
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   margin-bottom: 1em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .side-subnews span a{
- font-size: 1.1rem;
- 
+ font-size: 0.9rem;
+ font-weight: bold;
+ font-family: monospace;
 }
 
 .side-subnews a:hover{
@@ -317,8 +331,9 @@ position: relative;
   position: relative;
   margin: 5em auto;
   justify-content: center;
+  align-items: flex-start;
   max-width: 80%;
-  padding: 4em;
+  padding: 0em;
   
   }
 
@@ -326,23 +341,19 @@ position: relative;
     display: flex;
     justify-content: space-between;
     /* border: 2px solid  blue; */
-    margin-left: -4em;
-   
+    margin-top: 3em;
     
   }
   
   .trending h3{
   
-    /* background-color: rgb(11, 10, 10);
-    color: white; */
-    /* padding: 0.3em; */
-    left: 0;
-    top: 0;
     width: 40em;
     font-weight: bold;
     font-size: 1.3rem;
     position:absolute; 
     font-family: monospace;
+    left: 0;
+    top: 0;
     
   }
 
@@ -353,26 +364,29 @@ position: relative;
     font-family: monospace;
   }
   .trending-img1{
-    width: 20em;
-    height: auto;
+    width: 70%;
     object-fit: cover;
   }
 
  .trending-topic{
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin-top: 0.5em;
   font-family: monospace;
+  font-weight: bold;
  }
 
  .trending-main h2{
   margin-top: 0.5em;
-  width: 18em;
+  width: 70%;
+  font-size: 1.15rem;
+  font-family: Arial, Helvetica, sans-serif;
  }
 
  .trending-main p{
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-top: -0.8em;
-
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
  }
   .trending1{
     display: flex;
@@ -510,5 +524,10 @@ position: relative;
 .side-subnews a{
   font-size: 1.3rem;
   width: 50%;
+}
+
+.trending{
+  display: flex;
+  flex-direction: column;
 }
 }
