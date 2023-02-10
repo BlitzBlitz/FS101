@@ -429,13 +429,10 @@ padding-top: 2.5em;
 
   .logo-area img{
 
-    width:18em;
+    width:60%;
   }
 
-  .logo-area i{
-
-    
-  }
+ 
   .logo-area ul {
     display: none;
   }
@@ -449,9 +446,9 @@ padding-top: 2.5em;
 
 .signin-area button {
  
-  margin-right: 8em;
+  margin-right: 50em;
   padding: 0.7em;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
   
   
@@ -463,11 +460,12 @@ padding-top: 2.5em;
   display: flex;
   flex-direction: column;
   border-top: none;
-  margin: 4em;
+  margin: 5em auto;
+  /* border: 2px solid red */
 }
 
 .main-today{
-  width: 22em;
+  width: 130%;
   
 }
 
@@ -477,21 +475,23 @@ padding-top: 2.5em;
 
 .news-grid{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  /* border: 2px solid green; */
+  width: 135%;
 }
 
-.trending-img {
+.trending-img, .main-img{
   width: 21em;
-  height: auto; 
+  /* height: auto;  */
   object-fit: cover;
 }
 
 .main-news h1{
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .main-news h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .main-news span {
   font-size: 1rem;
@@ -505,29 +505,76 @@ padding-top: 2.5em;
   display: flex;
   flex-direction: column;
   border-top: none;
-  width: 100%;
-  margin: 0 0em;
-  margin-top: 6em;
+  width: 21.5em;
+  margin: 0.6em;
+  margin-top: 4em;
+  /* border: 2px solid blue; */
+  
 }
 
 .main-right span{
   
-  width: 22em;
+  width: 100%;
   margin-right: 24em;
-  margin-bottom: 3em;
+  margin-bottom: 3em; 
 }
 
 .side-news img{
   display: none;
 }
 
-.side-subnews a{
+/* .side-subnews a{
+  font-size: 1.2rem;
+  width: 20em;
+} */
+
+.article-title{
   font-size: 1.3rem;
-  width: 50%;
+  width: 20em;
 }
 
 .trending{
   display: flex;
   flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+.trending-main{
+  display: flex;
+  flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+/* .trending h3 span:nth-last-child(
+  display: none;
+) */
+
+.trending-p{
+  width: 100%;
+}
+
+.trending1{
+  /* border: 2px solid tomato; */
+  width: 100%;
+}
+.trending2{
+  /* border: 2px solid tomato; */
+  width: 100%;
+}
+.trending3{
+  /* border: 2px solid tomato; */
+  width: 100%;
+}
+.trending4{
+  /* border: 2px solid tomato; */
+  width: 100%;
 }
 }
+
+/* .trending h3{
+  display: none;
+} */
+
+/* .trending-p{
+  display: flex;
+}*/
