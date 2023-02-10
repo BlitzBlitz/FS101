@@ -1,9 +1,34 @@
 0. Review of the homeworks
 1. Questions from last session
 2. Review of the last session
-3. FONT
-4. min-wdith min-height
+3. min-wdith min-height
+4. FONT
+    *Let’s face it: the core purpose of all web design is communication.
+    *Fonts are static assests like images/videos/svg (they should be uploaded to the server)
+    *Downloading fonts:
+        Google Fonts, Typekit, Hoefler & Co.
+    *Two font familier:
+        -Serif Fonts
+        -San-Serif Fonts
+    *Choosing a font
+    *Choosing a font-size
+
+5. Practice practice practice
+
 
 
 Links
+    https://www.myfonts.com/pages/whatthefont/
 
+    http://preview.themeforest.net/item/notegraph-distinctive-typographybased-blog-theme/full_screen_preview/43333771
+    https://preview.themeforest.net/item/typology-text-based-minimal-wordpress-blog-theme/full_screen_preview/19547842
+    http://preview.themeforest.net/item/marlow-distinctive-typographyfirst-wordpress-blog-theme/full_screen_preview/21757268
+    https://www.snowhouse.studio/year-in-review-2022?ref=onepagelove
+
+
+Books:
+    The Elements of Typographic Style Applied to the Web 
+    Practical Typography 
+    Typewolf 
+    I Love Typography 
+    Typographica 
