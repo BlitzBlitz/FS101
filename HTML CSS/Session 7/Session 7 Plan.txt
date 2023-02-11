@@ -2,9 +2,10 @@
 1. Questions from last session
 2. Review of the last session
 3. min-wdith min-height
-4. FONT
+4. Responsive Grid
+
+5. FONT
     *Let’s face it: the core purpose of all web design is communication.
-    *Fonts are static assests like images/videos/svg (they should be uploaded to the server)
     *Downloading fonts:
         Google Fonts, Typekit, Hoefler & Co.
     *Two font familier:
@@ -13,7 +14,7 @@
     *Choosing a font
     *Choosing a font-size
 
-5. Practice practice practice
+6. Practice practice practice
 
 
 
