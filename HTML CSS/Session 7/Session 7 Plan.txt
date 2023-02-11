@@ -1,7 +1,7 @@
 0. Review of the homeworks
 1. Questions from last session
 2. Review of the last session
-3. min-wdith min-height
+3. min-wdith min-height        
 4. Responsive Grid
 
 5. FONT

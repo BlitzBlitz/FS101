@@ -63,8 +63,8 @@ li {
   color: white;
   padding: 0.25em 0.5em;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
 }
 
 .news-grid {
@@ -74,15 +74,14 @@ li {
   padding: 1.5em;
   padding-top: 3em;
 }
-.news-grid-item {
-}
+
 .news-grid-item:nth-child(2) {
-  grid-column: 2 / span 4;
+  grid-column: 2 / span 2;
   grid-row: 1 / span 2;
 }
 .main-img {
   width: 100%;
-  height: 65%;
+  min-height: 65%;
   object-fit: cover;
 }
 .right {
@@ -115,4 +114,87 @@ li {
 .recent-left {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar div:nth-child(2) {
+    margin: 1em 0;
+  }
+  .news-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .news-grid-item:nth-child(2) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+  .top-news-feed {
+    flex-direction: column;
+  }
+  .main-img {
+    width: 100%;
+    height: 40%;
+  }
+  .news-grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar div:nth-child(2) {
+    margin: 1em 0;
+  }
+  .top-news-feed {
+    flex-direction: column;
+  }
+  .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .news-grid-item:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .news-grid-item img {
+    width: 100%;
+  }
+  .recent-news {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 768px) {
+  .top-news-feed {
+    flex-direction: column;
+  }
+  .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .news-grid-item:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .news-grid-item img {
+    width: 100%;
+  }
+  .recent-news {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .top-news-feed {
+    flex-direction: column;
+  }
+  .recent-news {
+    justify-content: space-between;
+  }
 }
