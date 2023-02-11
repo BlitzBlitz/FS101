@@ -1,0 +1,16 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Babylonica&display=swap"); */
+
+@font-face {
+  font-family: myFontFamily;
+  src: url("./assest/font/Babylonica/Babylonica-Regular.ttf");
+}
+
+body {
+  background-image: url("../Session 6/newsgrid/newsgrid/img/featured.jpg");
+}
+
+p {
+  /* font-family: myFontFamily; */
+  color: white;
+  width: 50%;
+}

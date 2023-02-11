@@ -6,9 +6,11 @@
 
 5. FONT
     *Let’s face it: the core purpose of all web design is communication.
+    *Fonts are assets like img, video, svg
+        You have to include the into the project`s folder
     *Downloading fonts:
         Google Fonts, Typekit, Hoefler & Co.
-    *Two font familier:
+    *Two font families:
         -Serif Fonts
         -San-Serif Fonts
     *Choosing a font
@@ -17,7 +19,7 @@
 6. Practice practice practice
 
 
-
+typography-first design
 Links
     https://www.myfonts.com/pages/whatthefont/
 
