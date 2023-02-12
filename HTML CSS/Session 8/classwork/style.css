@@ -1,3 +1,18 @@
+@font-face {
+  font-family: handwritten;
+  src: url("./asset/Just_Another_Hand/JustAnotherHand-Regular.ttf");
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("./asset/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url("./asset/Roboto/Roboto-Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,16 +23,142 @@ body {
 }
 .page {
   border: 2px solid green;
-  width: 85%;
+  max-width: 1000px;
   margin: 3em auto;
   background-color: #f5f2ed;
 }
 .navbar {
-  border: 2px solid red;
   width: 85%;
   display: flex;
   justify-content: space-between;
   margin: 2em auto;
-  padding: 1em 0;
+  padding: 0.5em 0;
   border-bottom: 1px solid gray;
+}
+
+.brand {
+  font-family: handwritten;
+  font-size: 2rem;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar ul li {
+  margin: 0 0.5em;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #363233;
+  font-family: roboto-bold;
+  font-size: 0.8rem;
+}
+
+.main-feed {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr;
+  grid-template-rows: repeat(15, 250px);
+  gap: 2em;
+}
+
+.main-feed > div {
+  /* border: 3px dotted green; */
+}
+
+/* .main-feed > div:nth-child(1) { */
+.news-conatiner-1 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 4;
+}
+.news-conatiner-2 {
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 3;
+}
+.news-conatiner-3 {
+  grid-column: 1 / span 3;
+  grid-row: 8 / span 3;
+}
+.news-conatiner-4 {
+  grid-column: 1 / span 3;
+  grid-row: 11 / span 3;
+}
+.news-conatiner-5 {
+  grid-column: 1 / span 3;
+  grid-row: 14 / span 1;
+}
+.news-conatiner {
+  position: relative;
+  font-family: roboto;
+  line-height: 1.6rem;
+  padding: 3em;
+  background-color: white;
+}
+
+.news-conatiner h1 {
+  font-family: roboto-bold;
+  font-size: 2.5rem;
+  width: 70%;
+  line-height: 3rem;
+}
+.news-conatiner h1 a {
+  text-decoration: none;
+  color: #363233;
+}
+/* .news-conatiner > p:nth-child(1) {
+  border: 2px solid purple;
+} */
+.news-intro {
+  margin: 0.5em 0;
+  font-size: 1.2rem;
+}
+.news-conatiner > img {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+.news-content-short {
+  width: 100%;
+}
+.news-quote {
+  border-left: 2px solid gray;
+  margin: 1.3em 0;
+  margin-left: 1.5em;
+  padding-left: 1.5em;
+  width: 70%;
+  font-family: roboto-bold;
+  font-size: 1.5rem;
+}
+
+.popular-posts-container {
+  grid-row: 3 / span 6;
+  padding: 2em;
+  font-family: roboto;
+}
+.popular-posts-container img {
+  width: 80%;
+}
+.post-image {
+  position: relative;
+}
+.post-number {
+  position: absolute;
+  background-color: #363233;
+  padding: 0.2em 0.4em;
+  color: white;
+}
+
+.have-to-read {
+  border: 2px solid red;
+  grid-column: 4 / span 1;
+  grid-row: 9 / span 4;
+}
+.have-to-read img {
+  width: 70%;
 }
