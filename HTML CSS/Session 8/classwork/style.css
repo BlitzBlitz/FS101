@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #363233;
+}
+.page {
+  border: 2px solid green;
+  width: 85%;
+  margin: 3em auto;
+  background-color: #f5f2ed;
+}
+.navbar {
+  border: 2px solid red;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em auto;
+  padding: 1em 0;
+  border-bottom: 1px solid gray;
+}
