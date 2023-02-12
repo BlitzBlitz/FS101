@@ -1,0 +1,22 @@
+0. Review of the homeworks
+1. Questions from last session
+2. Review the wired website       
+4. Responsive Grid Review
+5. Building a typography-first website
+
+
+6. Sudo Selectors for pseudo Elements
+7. CSS Properties: z-index, margin: -10px; position: absolute, sticky;
+
+
+
+
+
+Links
+    https://www.myfonts.com/pages/whatthefont/
+
+    http://preview.themeforest.net/item/notegraph-distinctive-typographybased-blog-theme/full_screen_preview/43333771
+    https://preview.themeforest.net/item/typology-text-based-minimal-wordpress-blog-theme/full_screen_preview/19547842
+    http://preview.themeforest.net/item/marlow-distinctive-typographyfirst-wordpress-blog-theme/full_screen_preview/21757268
+    https://www.snowhouse.studio/year-in-review-2022?ref=onepagelove
+
