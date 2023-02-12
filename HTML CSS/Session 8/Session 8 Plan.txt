@@ -20,3 +20,9 @@ Links
     http://preview.themeforest.net/item/marlow-distinctive-typographyfirst-wordpress-blog-theme/full_screen_preview/21757268
     https://www.snowhouse.studio/year-in-review-2022?ref=onepagelove
 
+Course Project Steps:
+    Build the tmeplate      HTML CSS
+    Add interaction         JS
+    Seperate the template   React
+    Build the DB            SQL
+    Build the BE            Python/Flask
