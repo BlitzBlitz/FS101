@@ -1,21 +1,30 @@
 0. Module overview
-    How the session works 2 x 1h 25m (10 min brake)
-    How the homework works
-        Freecode camp exercises Freecodecamp.org
-        Book suggestion (Principles of Beautiful web design, Clean Code)
-        Module project 
-            1. Landing Page
-            2. Online newspaper / Tech Blog
-    The course project (Gym website / Real Estate)
-1. Setting up the environment 
-    a. install VS Code 
-    b. install VS Code extentions (liveserver, Prettier, JavaScript (ES6))
-2. Intro to web and HTML CSS
-    a. The web: What why and how?
-    b. HTML CSS: What why and how?
+    What are we going to cover?
+    How to keep yourself connected to the last Module?
+    Your experience with programming?
+    Between programming and problem solving
+
+1. Js Intro 
+    What? Why? How?
+    Comments
+2. Data types
+        a.numbers
+        b.string
+        c.bool
+        d.object
+        
+3. Variables
+        How do variables work in the RAM?
+        Why do variables live in the RAM instead of ROM(HDD/SSD)?
+        How does JS manage variables?
+
+    Constants
+
+4. Variable`s scope
+    naming variables
     
-3. Creating an HTML project
-    a. saving everything into a folder
-    b. project resources 
-4. Get hands dirty with HTML 
-    a. First HTML project
+5. Operators
+        Arithmetic
+        Comparision
+        Logic
+    Math object
