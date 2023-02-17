@@ -10,7 +10,7 @@
 2. Data types
         a.numbers
         b.string
-        c.bool
+        c.bool  (what is other values are false beside false)
         d.object
         
 3. Variables
@@ -28,3 +28,11 @@
         Comparision
         Logic
     Math object
+6. Get input and display output
+    alert(), promt()
+    console.log()
+    
+7. How to convert types
+
+    number->string      + ""
+    string->number      +string
