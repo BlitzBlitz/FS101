@@ -1,0 +1,48 @@
+Tempate Link:
+    https://www.avidangoor.com/
+
+
+Top Feautres:
+    User:
+
+        Any user:
+            See all the properties
+            Filter the properties
+            Message the dealer
+        
+        If logged in:
+            Add property to favourite
+            See all favourite properties
+            Delete property from favourite
+            See all viewed properties
+            Message the dealer
+
+    Admin:
+        List a property
+        Edit a property
+        Delete a property
+        Display all properties
+        Filter properties
+        
+
+
+Plan steps:
+    Step 1: 
+        Building the template (HTML CSS)
+            Building the user pages
+            Building the admin dashboard
+        Adding responsivness
+
+    Step 2:
+        Adding visual functionality by JS
+
+    Step 3:
+        Dividing the page into components using React
+
+    Step 4:
+        Modeling and Building a DB to save the data with MySql
+    
+    Step 5:
+        Building the backend for authentication and data saving with Python/Flask/Django
+
+

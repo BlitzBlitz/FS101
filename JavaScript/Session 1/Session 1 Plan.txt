@@ -1,0 +1,21 @@
+0. Module overview
+    How the session works 2 x 1h 25m (10 min brake)
+    How the homework works
+        Freecode camp exercises Freecodecamp.org
+        Book suggestion (Principles of Beautiful web design, Clean Code)
+        Module project 
+            1. Landing Page
+            2. Online newspaper / Tech Blog
+    The course project (Gym website / Real Estate)
+1. Setting up the environment 
+    a. install VS Code 
+    b. install VS Code extentions (liveserver, Prettier, JavaScript (ES6))
+2. Intro to web and HTML CSS
+    a. The web: What why and how?
+    b. HTML CSS: What why and how?
+    
+3. Creating an HTML project
+    a. saving everything into a folder
+    b. project resources 
+4. Get hands dirty with HTML 
+    a. First HTML project
