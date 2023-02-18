@@ -1,0 +1,75 @@
+0. Module overview
+    What are we going to cover?
+    How to keep yourself connected to the last Module?
+    Your experience with programming?
+    Between programming and problem solving
+
+1. Building conditions and using if statments
+
+2.  Exercises:
+        A.
+            (Arithmetic) Write a program that asks the user to enter two numbers, obtains them from
+            the user and prints their sum, product, difference, quotient and remainder.
+
+            Write a program that reads in the radius
+            of a circle and prints the circle’s diameter, circumference and area. Use the constant value 3.14159
+            for π.
+
+            Write a program that inputs one five-digit number, separates the number into its individual digits and prints the digits separated from one another by three
+            spaces each.
+
+            Create a BMI calculator application that reads the user’s weight in pounds and height in inches
+
+            Write a program to convert the temperature from C to F
+
+            Write a program to swap the values of two varaibles
+
+
+        B.
+            (Gas Mileage) Drivers are concerned with the mileage obtained by their automobiles. One
+            driver has kept track of several tankfuls of gasoline by recording miles driven and gallons used for
+            each tankful. Develop a program that will input the miles driven and gallons used for each tankful.
+            The program should calculate and display the miles per gallon obtained for each tankful. After processing 
+            all input information, the program should calculate and print the combined miles per gallon obtained for 
+            all tankfuls. Here is a sample input/output dialog: 
+
+            EX:
+                Enter the gallons used (-1 to end): 12.8
+                Enter the miles driven: 287
+                The miles/gallon for this tank was 22.421875
+                Enter the gallons used (-1 to end): 10.3
+                Enter the miles driven: 200
+                The miles/gallon for this tank was 19.417475
+                Enter the gallons used (-1 to end): 5
+                Enter the miles driven: 120
+                The miles/gallon for this tank was 24.000000
+
+                Enter the gallons used (-1 to end): -1
+                The overall average miles/gallon was 21.601423
+
+
+        C.  (Sales Commission Calculator) One large chemical company pays its salespeople on a commission basis.
+             The salespeople receive $200 per week plus 9% of their gross sales for that week. For
+            example, a salesperson who sells $5000 worth of chemicals in a week receives $200 plus 9% of
+            $5000, or a total of $650. Develop a program that will input each salesperson’s gross sales for last
+            week and will calculate and display that salesperson’s earnings. Process one salesperson's figures at a
+            time. Here is a sample input/output dialog:
+
+
+
+            EX: 
+                Enter sales in dollars (-1 to end): 5000.00
+                Salary is: $650.00
+                Enter sales in dollars (-1 to end): 1234.56
+                Salary is: $311.11
+                Enter sales in dollars (-1 to end): -1
+
+        D. A company pays its workers in the following conditions:
+                a. The worker gets 5$/h if he works for 200h 
+                b. Every extra hours over 200h is payed double
+            Given the amount of hours the worker works calculate his wage.
+
+        E. Make a program that generates a random number and asks the user to guess it.
+
+
+
