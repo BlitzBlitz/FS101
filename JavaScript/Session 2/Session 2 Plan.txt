@@ -5,6 +5,26 @@
     Between programming and problem solving
 
 1. Building conditions and using if statments
+    a. Build conditions using the Comparision (<,>,<=,>=, ==, !=, ===, !==)
+    b. We use the conditions inside the if statment
+    c. We can combined more than one condition using logical operators(&&, ||)
+        true && true => true
+        true && false => false
+        false && true => false
+        false && false => false
+
+        true || true => true
+        true || false => true
+        false || true => true
+        false || false => false
+
+1.5 If statment
+        a. it has 3 parts if-keyword, condition, body
+        b. it will only execute if the condition is true
+        c. it may have an else part 
+                which will only execute if the conditionis false
+
+
 
 2.  Exercises:
         A.
@@ -18,20 +38,23 @@
             Write a program that inputs one five-digit number, separates the number into its individual digits and prints the digits separated from one another by three
             spaces each.
 
+            Write a program to swap the values of two varaibles
+
             Create a BMI calculator application that reads the user’s weight in pounds and height in inches
 
             Write a program to convert the temperature from C to F
 
-            Write a program to swap the values of two varaibles
 
 
         B.
-            (Gas Mileage) Drivers are concerned with the mileage obtained by their automobiles. One
-            driver has kept track of several tankfuls of gasoline by recording miles driven and gallons used for
-            each tankful. Develop a program that will input the miles driven and gallons used for each tankful.
-            The program should calculate and display the miles per gallon obtained for each tankful. After processing 
-            all input information, the program should calculate and print the combined miles per gallon obtained for 
-            all tankfuls. Here is a sample input/output dialog: 
+            (Gas Mileage) Drivers are concerned with the mileage obtained by their 
+            automobiles. One driver has kept track of several tankfuls of gasoline
+             by recording miles driven and gallons used for each tankful. 
+            Develop a program that will input the miles driven and gallons used 
+            for each tankful. The program should calculate and display the miles 
+            per gallon obtained for each tankful. After processing all input 
+            information, the program should calculate and print the combined miles
+            per gallon obtained for all tankfuls. Here is a sample input/output dialog: 
 
             EX:
                 Enter the gallons used (-1 to end): 12.8
@@ -54,8 +77,6 @@
             $5000, or a total of $650. Develop a program that will input each salesperson’s gross sales for last
             week and will calculate and display that salesperson’s earnings. Process one salesperson's figures at a
             time. Here is a sample input/output dialog:
-
-
 
             EX: 
                 Enter sales in dollars (-1 to end): 5000.00
