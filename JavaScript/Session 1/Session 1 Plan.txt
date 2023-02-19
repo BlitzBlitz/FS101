@@ -24,7 +24,7 @@ Arrays      ->  SAVING
         How?
             a.numbers
             b.string
-            c.bool  (what is other values are false beside false)
+            c.boolean  (what is other values are false beside false)
             d.object
     JS is not a stricktly-typed language like C, C++, Java
         "not a stricktly-typed" it does not care about data types when SAVING the data
@@ -48,8 +48,8 @@ Arrays      ->  SAVING
     naming variables
     
 5. Operators
-        Arithmetic
-        Comparision
+        Arithmetic(+,-,*,/,%)
+        Comparision (<,>,<=,>=, ==, !=, ===, !===)
         Logic
     Math object
 6. Get input and display output
