@@ -174,7 +174,7 @@ left:0;
     }
 
 .main-news a{
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: bold;
 
   
@@ -414,19 +414,18 @@ padding-top: 2.5em;
   }
 
 .lower-grid{
-  border: 2px solid red;
-  display: grid;
+  /* border: 2px solid red; */
+  
   margin: 5em auto;
   border-top: 3px solid black;
   position: relative;
   max-width: 80%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-  gap: 1em;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em; */
 }
 .long-read{
   
-  /* width: 40em; */
+  
   font-weight: bold;
   font-size: 1.3rem;
   position:absolute; 
@@ -440,43 +439,84 @@ padding-top: 2.5em;
 
 .lower-main{
   margin: 3em 0;
-}
-
-.lower-bigimg {
-  grid-column: 1/ span 3;
-  grid-row: 1 / span 4;
-}
-
-/* .lower-bigimg{
-  grid-column: 1/ span 1;
-  grid-row: 3 / span 3;
-
-  border: 2px solid blue;
-} */
-
-
-.lowe-sub{
-  border: 2px solid green;
-  /* display: flex; */
+  /* border: 2px solid tomato; */
   
-  /* max-width: 90% ; */
 }
+
+.lower-main{
+  display: flex;
+}
+
+.lower-bigimg{
+  width: 100%;
+   /* border: 2px solid blue; */
+}
+
+.lower-bigimg img{
+  width: 100%;
+}
+
+.lower-main-text{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  margin-left: 2em;
+}
+
+.lower-span{
+  font-size: 1.3rem;
+}
+
+.lower-main-text p:nth-child(2){
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 2.5rem;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+}
+
+.lower-main-text p:nth-child(4){
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.3rem;
+margin-top: 7em;
+}
+
+.lower-sub{
+  display: flex;
+  margin: 5em  auto;
+  /* border: 3px solid green; */
+  max-width: 80%;
+}
+
 
 .lower-news1{
-  border: 2px  solid black;
+display: flex;
+justify-content: space-between;
+/* border: 1px solid red; */
 }
 
-.lower-grid img{
-  width: 100%;
-  width: 100%;
-  object-fit: cover;
-
+.news1{
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid black; */
 }
 
-/* .lower-news1 img{
-  width: 25%;
-} */
+.news1 span{
+  font-size: 1.3rem;
+  font-weight: 100;
+  
+}
 
+.news1 p{
+  font-size: 1.3rem;
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+ width: 10em;
+ margin-top: 1em;
+ /* width: 70%; */
+  
+}
 
 
 
