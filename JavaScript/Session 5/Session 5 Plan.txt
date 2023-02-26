@@ -3,7 +3,28 @@ Functions in depth
 
 0. Function What Why and How?
 
+    What:   Function are a number of instructions grouped under a name to solve 1 and only 1 task
+    Why:    Not to repeat ourself(code), to make the code more readable
+    How:    
+            Definition:     function nameOfFunction (parameterList){
+                                //Body
+                            }   
+            Calling:        nameOfFunction(argList);
+
 1. Functions dos and donts
+    DOs
+        a.  The Function should do one thing and one thing ONLY
+        b.   Names of the functions must be verbs, as functions are actions
+        c.  The function name should discribe in detail what the function does
+        d.  The Function should be 20 lines-long at max
+
+    DONTs
+        a.   DONT Write a function that has more than 3 parameters
+        b.   DONT write a function that has more than 30 lines 
+    
+    HOW: 
+            1.  Solve the problem by not following the rules above
+            2.  Refactor the code to follow the rules above   
 
 2. The return keyword
 

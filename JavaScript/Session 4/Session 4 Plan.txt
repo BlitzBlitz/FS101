@@ -24,7 +24,7 @@ Loops
     C. Following a loop to visualize it better
     D. Two types of ending point(strict/flag)
         Strict  -> we have a strict number of reps (5reps)  [we know the reps before the loop]
-        Flag    -> we don`t have a strict number of reps    [we dont know the reps until the end loop]
+        Flag    -> we don`t have a strict number of reps    [we don`t know the reps until the end loop]
                     we will terminate the loop when AN EVENT HAPPENDS
     
     E. The while loop
