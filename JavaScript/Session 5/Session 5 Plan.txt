@@ -1,0 +1,21 @@
+Functions in depth
+
+
+0. Function What Why and How?
+
+1. Functions dos and donts
+
+2. The return keyword
+
+3. Why are functions the second most important thing in programming?
+
+4. Function call
+    Calling a function?
+    How do the arguments work?(passing by value and reference)
+    
+5. Calling yourself...  
+        How does the Stack of function-calling work?
+6.  Recursive vs Iteractive
+
+7.  Exercises:
+        
