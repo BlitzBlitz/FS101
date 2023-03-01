@@ -1,51 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid Layout</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="news-feed">
-      <div class="news-container">News 1</div>
-      <div class="news-container">News 2</div>
-      <div class="news-container">
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-      </div>
-      <div class="news-container">
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-      </div>
-      <div class="news-container">
-        <h1>hi</h1>
-        <h1>hi</h1>
-        <h1>hi</h1>
-      </div>
-      <div class="news-container">News 6</div>
-      <div class="news-container">News 7</div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wired</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/51f509248e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="nav-bar">   
+    <div class="logo-area">
+      <!-- <i class="menu-icon"> <img src="./images/menu_FILL.svg" alt=""></i> -->
+      <i class="fa-solid fa-bars"></i>
+      <img src="./images/logo.svg" alt="">
+      <ul>
+        <li><a href="">BACKCHANNEL</a></li>
+        <li><a href="">BUSINESS</a></li>
+        <li><a href="">CULTURE</a></li>
+        <li><a href="">GEAR</a></li>
+        <li><a href="">IDEAS</a></li>
+        <li><a href="">SCIENCE</a></li>
+        <li><a href="">SECURITY</a></li>
+      </ul>
     </div>
+    <div class="signin-area">
+      <a href="" class="sigh-a">SIGN IN</a>
+      <hr class="signin-border"></hr>
+      <button type="button" class="sign-button"> SUBSCRIBE </button>
+      <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+  </div>
+  <div class="grid-container">
+    
+      
+      <div class="grid-left">
+        <span class="grid-today"> TODAY'S PICKS</span>
+        <div class="leftNews1">
+          <img src="./images/medium1.png" alt="">
+          <span> FREE FALL</span>
+          <h3>THE BATTLE FOR THE SOUL OF BUYING</h3>
+          <span> MUHSIN NSUBUGA</span>
+        </div>
+        <div class="leftNews2">
+          <img src="./images/medium2.png" alt="">
+          <span> FREE FALL</span>
+          <h3>THE BATTLE FOR THE SOUL OF BUYING</h3>
+          <span> MUHSIN NSUBUGA</span>
+        </div>
+       
+        <div class="main-news">
+            <img src="./images/big.png" alt="">
+            <span> FREE FALL</span>
+            <h1>THE BATTLE FOR THE SOUL OF BUYING</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quae praesentium consectetur illum hic, possimus assumenda excepturi animi labore reprehenderit.</p>
+            <span> MUHSIN NSUBUGA</span>
+        </div>
+      </div>
+      <hr class="main-hr"></hr>
+      <div class="grid-right">
+        <span class="most-recent"> MOST RECENT</span>
+        <div class="right-news1">
+          <div class="left-text">
+              
+              <p>Keke Palmer Is OK With Being Left Out of the Group Chat</p>
+              <span> MUHSIN NSUBUGA</span>
+          </div>
+          <div class="right-image"> 
+              <img src="./images/medium1.png" alt="">
+          </div>  
+              
+        </div>
+        <div class="right-news2">
+          <div class="left-text">
+              
+              <p>Cute Animals Are Overrated. Let’s Save the Weird Ones</p>
+              <span> MUHSIN NSUBUGA</span>
+          </div>
+          <div class="right-image"> 
+              <img src="./images/medium2.png" alt="">
+          </div>  
+              
+        </div>
+        <div class="right-news3">
+          <div class="left-text">
+              
+              <p>Uber and Lyft May Be More Likely to Fire Drivers of Color</p>
+              <span> MUHSIN NSUBUGA</span>
+          </div>
+          <div class="right-image"> 
+              <img src="./images/medium1.png" alt="">
+          </div>  
+              
+        </div>
+    
+        <div class="right-news4">
+          <div class="left-text">
+              
+              <p>All the Best Gadgets We Saw at MWC 2023</p>
+              <span> MUHSIN NSUBUGA</span>
+          </div>
+          <div class="right-image"> 
+              <img src="./images/medium2.png" alt="">
+          </div>  
+              
+        </div>
+        <div class="right-news5">
+          <div class="left-text">
+              
+              <p>India’s YouTube Vigilante Is Wanted for Murder </p>
+              <span> MUHSIN NSUBUGA</span>
+          </div>
+          <div class="right-image"> 
+              <img src="./images/medium1.png" alt="">
+          </div>  
+              
+        </div>
+    
+      </div>
+    
+      
 
-    <!-- <div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-        doloribus commodi expedita quis, laudantium dolore porro quod natus sunt
-        voluptas!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-        doloribus commodi expedita quis, laudantium dolore porro quod natus sunt
-        voluptas!
-      </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-        doloribus commodi expedita quis, laudantium dolore porro quod natus sunt
-        voluptas!
-      </p>
-    </div> -->
-  </body>
+  </div>
+
+  <div class="trending-stories">
+    <p class="trending ">TRENDING STORIES <span class="trending-upper-span"> TOP STORIES IN THE LAST 48 HOURS</SPAn></p>
+    <div class="trending-news1">
+      <img src="./images/medium1.png" alt="" class="=.trending-images ">
+      <span> FREE FALL</span>
+      <h3>All the Settings You Should Change on Your New Samsung Phone</h3>
+      <p>Scientists are asking tough questions about the health effects of ultra-processed diets. The answers are complicated—and surprising.</p>
+      <span> MATT REYNOLDS</span>
+    </div>
+    <div class="trending-news2">
+      <img src="./images/medium2.png" alt="" class="=.trending-images ">
+      <span> FREE FALL</span>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <p>Reports that the JWST killed the reigning cosmological model have been exaggerated. But there’s still much to learn from the distant galaxies it glimpses.</p>
+      <span > MATT REYNOLDS</span>
+    </div>
+    <div class="trending-news3">
+      <img src="./images/medium2.png" alt="" class="=.trending-images ">
+      <span> FREE FALL</span>
+      <h3>You Can Turn Your Backyard Into a Biodiversity Hotspot</h3>
+      <p>There are too many great features turned off by default. Rectify that with these tips..</p>
+      <span> MATT REYNOLDS</span>
+    </div>
+    <div class="trending-news4">
+      <img src="./images/medium1.png" alt="" class="=.trending-images ">
+      <span> FREE FALL</span>
+      <h3>No, the James Webb Space Telescope Hasn’t Broken Cosmology</h3>
+      <p>New research shows that if done right, urban farms and gardens can support all kinds of species—for the good of people and the environment.</p>
+      <span> MATT REYNOLDS</span>
+    </div>
+    
+  </div>
+
+  <div class="summary-news">
+    <div class="summary-news1">
+      <span>BUSINESS</span>
+      <img src="./images/medium1.png" alt="">
+      <h3>Should I Learn Coding as a Second Language?</h3>
+      <h3>America’s Most Boring Association Is Fighting the Planet</h3>
+      <h3>Human Art Already Has So Much In Common With AI</h3>
+    </div>
+    <div class="summary-news2">
+      <span>BUSINESS</span>
+      <img src="./images/medium2.png" alt="">
+      <h3>You Can Turn Your Backyard Into a Biodiversity Hotspot</h3>
+      <h3>No One Knows If Decades-Old Nukes Would Actually Work</h3>
+      <h3>No, the James Webb Space Telescope Hasn’t Broken Cosmology</h3>
+    </div>
+    <div class="summary-news3">
+      <span>BUSINESS</span>
+      <img src="./images/medium1.png" alt="">
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+    </div>
+    <div class="summary-news4">
+      <span>BUSINESS</span>
+      <img src="./images/medium2.png" alt="">
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+    </div>
+    <div class="summary-news5">
+      <span>BUSINESS</span>
+      <img src="./images/medium1.png" alt="">
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+    </div>
+    <div class="summary-news6">
+      <span>BUSINESS</span>
+      <img src="./images/medium2.png" alt="">
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+      <h3>Fat, Sugar, Salt ... You’ve Been Thinking About Food All Wrong</h3>
+    </div>
+  </div>
+
+  <div class="lower-signup">
+    
+    <div class="signup-main">
+      <div class="signup-left">
+        <i class="fa-solid fa-arrows-down-to-line"></i>
+        <h2>SIGN UP FOR THE WIRED DAILY NEWSLETTER</h2>
+        <p>Our biggest stories, delivered to your inbox every day.</p>
+        <a href="">See all newsletters.</a>
+      </div>
+      <div class="signup-form">
+        <div class="form">
+          <form action="">
+            <label for="email">Your Email</label>
+            <input type="email" placeholder="E-mail Address" >
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+        <div class="user-aggreement">
+           
+         <p>By signing up you agree to our User Agreement (including the class action waiver and arbitration provisions), 
+          our Privacy Policy & Cookie Statement and to receive marketing and account-related emails from WIRED. 
+          You can unsubscribe at any time.</p>
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-upper">
+      <div class="footer-brand">
+        <div class="footer-social">
+          <ul>
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i> </a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-more"></div>
+      <div class="footer-contact"></div>
+    </div>
+    <div class="footer-lower">
+      <div class="rss-section">
+        <li><a href="">RSS </a></li>
+            <li><a href="">Accessibility Help</a></li>
+            <li><a href="">Condé Nast Store</a></li>
+            <li><a href="">Condé Nast Spotlight</a></li>
+            <button type="button"> DO NOT SELL MY PERSONAL INFO</button>
+            
+      </div>
+      <div class="footer-country">
+        <button type="button" class="button"> 
+          <span> United States</span>
+          <span><i class="fa-solid fa-caret-down"></i></span>
+        </button>
+      </div>
+    </div>
+    © 2023 Condé Nast. All rights reserved. Use of this site constitutes acceptance of our User Agreement and Privacy Policy and Cookie Statement and Your California Privacy Rights. WIRED may earn a portion of sales from products that are purchased through our site as part of our Affiliate Partnerships with retailers. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. Ad Choices
+  </div>
+</body>
 </html>
