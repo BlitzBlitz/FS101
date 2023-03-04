@@ -1,0 +1,21 @@
+Arrays in depth
+
+
+0. Arrays What Why and How?
+
+    What:   
+    Why:    
+    How:    
+        CRUD     
+
+1. How are arrays saved
+
+2. What happens if you pass an array as arg
+
+3. Declaring an unknown number of params ...
+
+4. Array functions
+
+5. High-order array functions
+
+6. Exercises

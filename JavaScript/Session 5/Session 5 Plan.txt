@@ -39,7 +39,7 @@ Functions in depth
 
 7. Having a function as an argument(callback)
     
-8. Arrow functions(ES6)
+8. Arrow functions(ES6) / lambda
 
 9. Calling yourself...  
         How does the Stack of function-calling work?
@@ -55,7 +55,8 @@ Functions in depth
             12.” Use this function to calculate the amount of time in seconds between two times, both of which
             are within one 12-hour cycle of the clock.
         Write a function to print all the factors of a number example 10 -> 2, 5
-        Write a C program that plays the game of “guess the number” as follows: Your program chooses the number to be guessed by selecting an integer at random in the range
+        Write a C program that plays the game of “guess the number” as follows: Your program chooses 
+            the number to be guessed by selecting an integer at random in the range
             1 to 1000. The program then types:
 
         Recursion:
