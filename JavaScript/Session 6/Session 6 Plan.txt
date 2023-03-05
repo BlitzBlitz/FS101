@@ -3,19 +3,57 @@ Arrays in depth
 
 0. Arrays What Why and How?
 
-    What:   
-    Why:    
+    What:   Arrays are data structures that allow us to save more than 1 value 
+    Why:    To save a list of data and avoid the variable restriction of saving only 1 value
     How:    
-        CRUD     
+        Creating an array and inserting values
+        Reading vaules from the array using indexes (Searching for an elementi in the array)
+        Updating an array (adding an element into the array)
+        Deleting an element from the array    
 
 1. How are arrays saved
 
+1.1 Value Type and Referenced types
+        Primitive values are values that are immutable (cannot be changed) and are copied by value. They include:
+
+            Undefined
+            Null
+            Boolean
+            Number
+            String
+
+        Reference values, on the other hand, are objects and are copied by reference. They include:
+
+            Object
+            Array
+            Function
+            
+
 2. What happens if you pass an array as arg
+    Do we need to return the array?
 
 3. Declaring an unknown number of params ...
 
 4. Array functions
 
 5. High-order array functions
+    functions that accept functions as args
 
 6. Exercises
+
+        1. Make a function that accepts an array an returns the avarage
+        2. Make a function that accept an array and returns the min and max
+        3. Make a function that accept an array and returns true if the number are in ASC
+        4. Make a function that accept an array and returns true if all the elements are of same type
+        5. Write a function that takes an array of strings as an argument and returns 
+                a new array of all the unique strings.
+        6. Write a function that takes an array of numbers as an argument and returns 
+                a new array with all the numbers that are greater than the average of all the numbers.
+        7. Write a function that takes an array of numbers and deletes all the negative numbers
+        8. Write a function that takes an array of numbers and adds -10 after each positive element
+
+
+
+        6.35 (Print an Array) Write a recursive function printArray that takes an array and the size of
+        the array as arguments, prints the array, and returns nothing. The function should stop processing
+        and return when it receives an array of size zero.
