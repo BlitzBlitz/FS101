@@ -1,0 +1,64 @@
+Functions in depth
+
+
+0. Function What Why and How?
+
+    What:   Function are a number of instructions grouped under a name to solve 1 and only 1 task
+    Why:    Not to repeat ourself(code), to make the code more readable
+    How:    
+            Definition:     function nameOfFunction (parameterList){
+                                //Body
+                            }   
+            Calling:        nameOfFunction(argList);
+
+1. Functions dos and donts
+    DOs
+        a.  The Function should do one thing and one thing ONLY
+        b.  Names of the functions must be verbs, as functions are actions
+        c.  The function name should discribe in detail what the function does
+        d.  The Function should be 20 lines-long at max
+
+    DONTs
+        a.   DONT Write a function that has more than 3 parameters
+        b.   DONT write a function that has more than 30 lines 
+    
+    HOW: 
+            1.  Solve the problem by not following the rules above
+            2.  Refactor the code to follow the rules above   
+
+2. The return keyword
+
+3. Why are functions the second most important thing in programming?
+
+4. Function call
+    Calling a function?
+    How do the arguments work?(passing by value and reference)
+5. Declaring an unknown number of params ...
+
+6. Saving a function into a variable
+
+7. Having a function as an argument(callback)
+    
+8. Arrow functions(ES6) / lambda
+
+9. Calling yourself...  
+        How does the Stack of function-calling work?
+10.  Recursive vs Iteractive
+
+11.  Exercises:
+        Write a function that takes a number as an argument and returns true if the number is prime, false otherwise.
+        Write a function that takes a string as an argument and returns the string in reverse order.
+        Write a function that takes a number as a parameter and returns true if the number is a positive integer, false otherwise.
+        Write a function integerPower(base, exponent) that returns the value of baseexponent
+        Write a function that takes the time as three integer arguments (for
+            hours, minutes, and seconds) and returns the number of seconds since the last time the clock “struck
+            12.” Use this function to calculate the amount of time in seconds between two times, both of which
+            are within one 12-hour cycle of the clock.
+        Write a function to print all the factors of a number example 10 -> 2, 5
+        Write a C program that plays the game of “guess the number” as follows: Your program chooses 
+            the number to be guessed by selecting an integer at random in the range
+            1 to 1000. The program then types:
+
+        Recursion:
+            Write a function to return the factorial of a number
+            Write a function to print the fibonaci serie

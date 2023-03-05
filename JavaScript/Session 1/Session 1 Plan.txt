@@ -1,0 +1,85 @@
+0. Module overview
+    What are we going to cover?
+    How to keep yourself connected to the last Module?
+    Your experience with programming?
+    Between programming and problem solving
+
+
+SAVING or MANIPULATING
+
+Variable    ->  SAVING
+Operators   ->  MANIPULATING
+Functions   ->  MANIPULATING            (method === function)
+Arrays      ->  SAVING
+
+1. Js Intro 
+    What? Why? How?
+    Comments
+
+2. Data types
+        What?
+            They are diffrent flavours of data 
+        Why?
+            To deal with data, that we get as input or we give as output, in a better way
+        How?
+            a.numbers
+            b.string
+            c.boolean  (what is other values are false beside false)
+            d.object
+    JS is not a stricktly-typed language like C, C++, Java
+        "not a stricktly-typed" it does not care about data types when SAVING the data
+        We care about data types when MANIPULATING data(using operators) 
+
+    let age = 10;                   int age = 10;
+    age = "ten";                    age = "ten";     //error
+
+    10 + 10 = 
+
+        
+        
+3. Variables
+        How do variables work in the RAM?
+        Why do variables live in the RAM instead of ROM(HDD/SSD)?
+        How does JS manage variables?
+
+    Constants
+
+4. Variable`s scope
+    naming variables
+    
+5. Operators
+        Arithmetic(+,-,*,/,%)
+        Comparision (<,>,<=,>=, ==, !=, ===, !===)
+        Logic
+    Math object
+6. Get input and display output
+    alert(), promt()
+    console.log()
+    
+7. How to convert types
+    typeof
+    number->string      + ""
+    string->number      +string
+
+8. Books
+    Clean Code Bob Martin
+
+    // name the varaibles/functions the right way
+// don`t be affraid to place long names
+
+//Interpreter           Compiler
+/*  
+
+
+Interpreter
+     You give it a script and it will run the script without turning it into 0s and 1s before execution
+     1. You give it a script
+     2. It runs the script
+     3. It translates to 0s and 1s ON THE RUN
+
+*/
+//Compiler
+//      You give it a script and it will translate to 0s and 1s turning the script into a .exe file
+//      1. You give it a script
+//      2. It translates to 0s and 1s BEFORE THE RUN
+//      3. You can run the .exe file

@@ -1,0 +1,75 @@
+Loops 
+    What?
+        Statments that we use to repeat some lines a NUMBER OF TIMES
+    Why?
+        Because we want to repeat some code A NUMBER OF TIMES
+    How(do we achieve a number of reps)?
+        Each loop that we build has 3 parts:
+            a. starting point       -3          (inclusive)
+            b. ending point         5           (exclusive)
+            c. the step             +2
+
+            0,1,2,3,4           5reps
+            0,2,4               3reps
+            -3, -1, 1, 3        4reps
+
+            Math.random()   -> 0-1 -> 0 - 0.9999999
+
+
+0. How to crack looping Exercises?
+
+1. Looping around
+    A. Three inputs for the for statment
+    B. How is a loop executed
+    C. Following a loop to visualize it better
+    D. Two types of ending point(strict/flag)
+        Strict  -> we have a strict number of reps (5reps)  [we know the reps before the loop]
+        Flag    -> we don`t have a strict number of reps    [we don`t know the reps until the end loop]
+                    we will terminate the loop when AN EVENT HAPPENDS
+    
+    E. The while loop
+
+2. Looping while looping
+    A. How does a loop inside another loop behave
+    B. Usercases of nested-loops
+    C. Disadvantages of nested-loops
+    D. Following a nested loop to visualize it better
+
+
+4.  Exercises:
+        1. Code a program to display:
+            1 3 5 7 9 11 ... 
+            ... 11 9 7 5 3 1
+        2. Code a program to get the number of vowels in a string
+
+        3. Code a program to delete all vowels of a string
+
+        4. Code a program to get a number n and return the number
+                123456789...
+        5. (Average a Sequence of Integers) Write a program that calculates and prints the average of
+            several integers. Assume the last value read with prompt is the sentinel -1. A typical input sequence
+            might be
+        6. Write a program that finds the smallest of several integers of ex5.
+
+        7.The factorial function is used frequently in probability problems. The factorial of
+            a positive integer n (written n! and pronounced “n factorial”) is equal to the product of the positive
+            integers from 1 to n. Write a program that evaluates the factorials of the integers from 1 to 5. Print the
+            results in tabular format. What difficulty might prevent you from calculating the factorial of 20?
+        8.(Calculating the Value of π) Calculate the value of π from the infinite series  4- 4/3 + 4/5 - 4/7 + 4/9
+            Print a table that shows the value of π approximated by one term of this series, by two terms, by
+            three terms, and so on. How many terms of this series do you have to use before you first get 3.14?
+            3.141? 3.1415? 3.14159?
+
+        9.Write a program that prints a table of all
+            the Roman numeral equivalents of the decimal numbers in the range 1 to 100.
+        10. Write a program to display the floors of a building and for each floor it should 
+                display the app #. Take the number of floors and the number of app/floor as input
+        11. Write a program to count the number of vowels in a set of strings given by the User
+                At the end of the set the user should enter the word "quit"
+        12. Write a program to count the average letter/word in a set of words a user enters
+                At the end of the set the user should eneter the word "quit"
+        13. You work for a coffee shop and you want to print out a menu for customers to order from. 
+            You have 3 types of drinks (coffee, tea, and hot chocolate) and 3 sizes 
+            (small, medium, and large). Write a program using nested loops to print 
+            out all possible combinations of drinks and sizes.
+        14. Write a program to print out all the prime numbers between 1 and 100 using nested loops.
