@@ -32,22 +32,22 @@
 
 //Saving by Value VS Saving by Reference
 
-let age = 10;
-let ageCopy = age;
+// let age = 10;
+// let ageCopy = age;
 
-let studentsGrades = [10, 50, 60, 64, 93];
-let studentsGradesCopy = studentsGrades; //shallow copy
-let studentsGradesDeepCopy = studentsGrades.slice(0, studentsGrades.length); //deep copy
+// let studentsGrades = [10, 50, 60, 64, 93];
+// let studentsGradesCopy = studentsGrades; //shallow copy
+// let studentsGradesDeepCopy = studentsGrades.slice(0, studentsGrades.length); //deep copy
 
-console.log("Before");
-console.log(studentsGrades);
-console.log(studentsGradesDeepCopy);
+// console.log("Before");
+// console.log(studentsGrades);
+// console.log(studentsGradesDeepCopy);
 
-studentsGradesDeepCopy[2] = -999;
+// studentsGradesDeepCopy[2] = -999;
 
-console.log("After");
-console.log(studentsGrades);
-console.log(studentsGradesDeepCopy);
+// console.log("After");
+// console.log(studentsGrades);
+// console.log(studentsGradesDeepCopy);
 
 // console.log("Before Changing: ");
 // console.log("Original: " + studentsGrades.toString());
@@ -64,6 +64,9 @@ console.log(studentsGradesDeepCopy);
 // console.log("Original: " + age);
 // console.log("Shallow Copy: " + ageCopy);
 
+let age = 10;
+let studentsGrades = [10, 50, 60, 64, 93];
+
 function changeAge(age) {
   age = 58;
   return age;
@@ -74,13 +77,13 @@ function deleteMiddleElement(array) {
   array.splice(middleIndex, 1);
 }
 
-// console.log("Before");
-// console.log(studentsGrades.toString());
-// console.log(age);
+console.log("Before");
+console.log(studentsGrades.toString());
+console.log(age);
 
-// deleteMiddleElement(studentsGrades);
-// age = changeAge(age);
+deleteMiddleElement(studentsGrades);
+changeAge(age);
 
-// console.log("After");
-// console.log(studentsGrades.toString());
-// console.log(age);
+console.log("After");
+console.log(studentsGrades.toString());
+console.log(age);
