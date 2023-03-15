@@ -6,6 +6,7 @@
 2. Selecting Html elements
         .querySelector()
         .getElementById(), sbyClass(),sByTagName()
+
 3. Changin a HTML element
         .innerText
         .innerHtml
@@ -25,13 +26,18 @@
 
 5. Creating new Html elements
 
-6. Date and Time
+6. Events
+        Mouse Events
+        Keyboard Events
+        !!!Event Bubbling
+
+7. Date and Time
         working with timestamps
                 comparing dates
 
-7. String templates `Name: ${name}`
+8. String templates `Name: ${name}`
 
-8. Overview of some date-time library
+9. Overview of some date-time library
         date-fns, momentJs
 Exercises:
 
