@@ -1,0 +1,44 @@
+1. DOM
+        What? 
+        Why?
+        How?
+
+2. Selecting Html elements
+        .querySelector()
+        .getElementById(), sbyClass(),sByTagName()
+3. Changin a HTML element
+        .innerText
+        .innerHtml
+        .setAttribute
+
+        .style
+        .classList
+            .add
+            .remove
+            .toggle
+        
+4. Html elements and relations
+
+        listElement.children
+
+        article.parentElement
+
+5. Creating new Html elements
+
+6. Date and Time
+        working with timestamps
+                comparing dates
+
+7. String templates `Name: ${name}`
+
+8. Overview of some date-time library
+        date-fns, momentJs
+Exercises:
+
+                Building a digital clock
+
+                Build a Quiz Game
+
+                Building a todoList
+                        Use date-fns to show calculate the deadlines
+                Adding a theme to an existing project
