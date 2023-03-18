@@ -48,6 +48,9 @@ function createTodo(todoText) {
 }
 
 //Delete Todo
+//the event argument is given to you by JS
+//JS creates an event object(which contains infos for the event)
+//And after it creats this object it passes it to your function
 todosContainerElement.addEventListener("click", (event) => {
   deleteTodo(event);
 });
