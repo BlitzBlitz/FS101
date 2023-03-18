@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo | JS</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="appContainer">
+        <h1>Todo App</h1>
+        <div class="add-container">
+          <input id="add-input" type="text" placeholder="Add your new todo" />
+          <button id="add-btn">
+            <img src="./Templates/add-icon.png" alt="" />
+          </button>
+        </div>
+        <div class="todosContainer" id="todosContainer"></div>
+        <div class="delete-container">
+          <span id="pending-todos">You have 0 pending tasks</span>
+          <button id="clear-all-btn">Clear All</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page {
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.appContainer {
+  width: 40%;
+  border: 2px solid green;
+  padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.add-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.add-container input {
+  width: 90%;
+  padding: 0.5em;
+}
+.add-container button {
+  width: 10%;
+
+  background-color: #a263e0;
+  border: 0;
+}
+.todosContainer {
+  border: 2px solid red;
+  min-height: 200px;
+}
+
+.delete-container {
+  display: flex;
+  align-items: center;
+}
+.delete-container span {
+  width: 80%;
+}
+.delete-container button {
+  width: 20%;
+
+  background-color: #a263e0;
+  padding: 0.5em;
+  border: 0;
+}
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

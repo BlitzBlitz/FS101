@@ -24,7 +24,7 @@
 
         article.parentElement
 
-5. Creating new Html elements
+5. Creating new Html elements and attaching them to the HTML document
 
 6. Events
         Mouse Events
