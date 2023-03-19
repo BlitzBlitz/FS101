@@ -56,7 +56,9 @@ todosContainerElement.addEventListener("click", (event) => {
 });
 
 function deleteTodo(event) {
-  console.log(event.target);
+  if (event.target.nodeName !== "BUTTON") {
+    return;
+  }
   let deleteButton = event.target;
   let id = deleteButton.id;
   let indexToDelete = todos.indexOf(id);

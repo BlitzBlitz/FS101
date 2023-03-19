@@ -5,7 +5,7 @@
 
 2. Selecting Html elements
         .querySelector()
-        .getElementById(), sbyClass(),sByTagName()
+        .getElementById(), sbyClass(), sByTagName()
 
 3. Changin a HTML element
         .innerText
@@ -27,6 +27,17 @@
 5. Creating new Html elements and attaching them to the HTML document
 
 6. Events
+        Every event has 3 parts:
+                a. The Target                   (HTML element)
+                b. The type of the event        (click)
+                c. The Handler                  (function)
+
+        JS creates and EventObject whenever an even take place
+        This EventObject has inside of it infos for the event   (target, the x/y coordinates,)
+
+        
+        targetElement.addEventListener('click', (event) => handlerFunction(event))
+
         Mouse Events
         Keyboard Events
         !!!Event Bubbling

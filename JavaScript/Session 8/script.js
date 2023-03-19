@@ -51,26 +51,43 @@ boxesElement = document.querySelector(".box");
 //              2. Type of the event  ('click', 'dblclick', 'keydown')
 //              3. Handler            (changeColor())
 
-let changeBgColor = () => {
-  box1Element.classList.add("bg-red");
-};
+// let changeBgColor = () => {
+//   box1Element.classList.add("bg-red");
+// };
 
-let changeBorderColor = function () {
-  box1Element.classList.add("border-green");
-};
+// let changeBorderColor = function () {
+//   box1Element.classList.add("border-green");
+// };
 
-let changeBgButtonElement = document.getElementById("changeBgButton");
-changeBgButtonElement.addEventListener("click", changeBgColor);
-changeBgButtonElement.addEventListener("dblclick", changeBgColor);
+// let changeBgButtonElement = document.getElementById("changeBgButton");
+// changeBgButtonElement.addEventListener("click", changeBgColor);
+// changeBgButtonElement.addEventListener("dblclick", changeBgColor);
 
-let nameInputElement = document.getElementById("name");
+// let nameInputElement = document.getElementById("name");
 
-let logContent = () => {
-  console.log(nameInputElement.value);
-  if (nameInputElement.value.length < 10) {
-    nameInputElement.classList.add("red-border");
-  } else {
-    nameInputElement.classList.remove("red-border");
-  }
-};
-nameInputElement.addEventListener("keyup", logContent);
+// let logContent = () => {
+//   console.log(nameInputElement.value);
+//   if (nameInputElement.value.length < 10) {
+//     nameInputElement.classList.add("red-border");
+//   } else {
+//     nameInputElement.classList.remove("red-border");
+//   }
+// };
+// nameInputElement.addEventListener("keyup", logContent);
+
+//Inserting a new element to a div
+
+//1. Get the children HTMLCollection and convert it into an array
+// let childrenArray = [...box1Element.children]; // h1,h1,h1
+
+// let newH1 = document.createElement("h1");
+// newH1.innerText = "JS Created";
+// newH1.classList.add("main-title");
+
+// //2. Add the element into the array
+// childrenArray.splice(1, 0, newH1);
+// console.log(childrenArray);
+
+// //3. Replace the children of the div to reflect the change
+// box1Element.replaceChildren(...childrenArray); //h1,h1,h1,h1
+// console.log(box1Element.children);
