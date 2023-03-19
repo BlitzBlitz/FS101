@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  },
+  "name": "fs101",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlitzBlitz/FS101.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlitzBlitz/FS101/issues"
+  },
+  "homepage": "https://github.com/BlitzBlitz/FS101#readme",
+  "description": ""
+}

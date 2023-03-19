@@ -46,7 +46,7 @@
         working with timestamps
                 comparing dates
 
-8. String templates `Name: ${name}`
+8. String templates literals `Name: ${name}`
 
 9. Overview of some date-time library
         date-fns, momentJs

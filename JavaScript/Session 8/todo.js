@@ -1,3 +1,5 @@
+import { addDays, format } from "date-fns/fp";
+
 let todos = [];
 let addBtnElement = document.getElementById("add-btn");
 addBtnElement.addEventListener("click", addTodo);
@@ -6,11 +8,24 @@ let todosContainerElement = document.getElementById("todosContainer");
 
 //Add Todo
 function addTodo() {
-  let todoText = addTodoInputElement.value;
-  if (todoText.length == 0 || todos.indexOf(todoText) != -1) {
+  let newTodoText = addTodoInputElement.value;
+  let isPresent = false;
+  for (let index = 0; index < todos.length; index++) {
+    const todoObject = todos[index];
+    if (todoObject.text === newTodoText) {
+      isPresent = true;
+    }
+  }
+  if (newTodoText.length == 0 || isPresent) {
     return;
   }
-  todos.push(todoText);
+  let nowDate = new Date();
+  let todoObject = {
+    id: todos.length,
+    text: newTodoText,
+    timestamp: nowDate.getTime(),
+  };
+  todos.push(todoObject);
   addTodoInputElement.value = "";
   displayTodos();
 
@@ -23,16 +38,17 @@ function displayTodos() {
   todosContainerElement.innerHTML = "";
   for (let index = 0; index < todos.length; index++) {
     const todo = todos[index];
-    let todoElement = createTodo(todo);
+    let todoElement = createTodoElement(todo);
     todosContainerElement.appendChild(todoElement);
   }
 }
 
-function createTodo(todoText) {
+function createTodoElement(todo) {
   let todoDivElement = document.createElement("div");
   todoDivElement.classList.add("todo-container");
   let todoTextElement = document.createElement("span");
-  todoTextElement.innerText = todoText;
+  todoTextElement.innerText =
+    todo.text + "  |  " + format(todo.timestamp, "DD, MMMM");
   todoTextElement.style.width = "80%";
   let todoDeleteElement = document.createElement("button");
   todoDeleteElement.style.width = "20%";
@@ -40,7 +56,7 @@ function createTodo(todoText) {
     "url('./Templates/delete-icon.png')";
   todoDeleteElement.style.height = "30px";
   todoDeleteElement.style.backgroundSize = "cover";
-  todoDeleteElement.id = todoText;
+  todoDeleteElement.id = todo.id;
   todoDivElement.appendChild(todoTextElement);
   todoDivElement.appendChild(todoDeleteElement);
 
@@ -59,10 +75,18 @@ function deleteTodo(event) {
   if (event.target.nodeName !== "BUTTON") {
     return;
   }
+  console.log("Deleting...");
   let deleteButton = event.target;
-  let id = deleteButton.id;
-  let indexToDelete = todos.indexOf(id);
-  todos.splice(indexToDelete, 1);
+  let id = +deleteButton.id;
+  console.log(id);
+  for (let index = 0; index < todos.length; index++) {
+    const todoObject = todos[index];
+    console.log(todoObject);
+    if (todoObject.id === id) {
+      todos.splice(index, 1);
+      break;
+    }
+  }
   displayTodos();
 }
 
