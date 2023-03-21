@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 440px;
+    height: 200px;
+    background-color: tomato;
+    border: none;
+    margin: 2em;
+    
+}
+
+button{
+    margin-left: 2em;
+    padding: 0.5em;
+}
