@@ -1,5 +1,3 @@
-import { addDays, format } from "date-fns/fp";
-
 let todos = [];
 let addBtnElement = document.getElementById("add-btn");
 addBtnElement.addEventListener("click", addTodo);
@@ -48,7 +46,7 @@ function createTodoElement(todo) {
   todoDivElement.classList.add("todo-container");
   let todoTextElement = document.createElement("span");
   todoTextElement.innerText =
-    todo.text + "  |  " + format(todo.timestamp, "DD, MMMM");
+    todo.text + "  |  " + dateFns.format(todo.timestamp, "DD, MMMM");
   todoTextElement.style.width = "80%";
   let todoDeleteElement = document.createElement("button");
   todoDeleteElement.style.width = "20%";
