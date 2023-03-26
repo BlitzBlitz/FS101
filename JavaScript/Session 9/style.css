@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pop-up-bg {
+    width: 100vw ;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.pop-up-bg form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page,
+.menu,
+.dashboard {
+    border: 2px dotted red;
+}
+
+.page {
+    display: flex;
+}
+
+.menu {
+    width: 15vw;
+    height: 100vh;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dashboard {
+    width: 85vw;
+    height: 100vh;
+}
+
+.menu > div {
+    border: 2px dotted green;
+    margin: 3em 0;
+}
+
+.dashboard > div {
+    border: 2px solid blue;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 1em 2em;
+    overflow:scroll;
+    overflow-y:auto;
+    position:relative;
+}
+
+.card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.counters {
+    display: flex;
+    border: 1px solid yellow;
+    justify-content: space-between;
+    margin-top: 1em;
+} 
+
+.counters > div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 ;
+    border: 1px solid gray;
+} 
