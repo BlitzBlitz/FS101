@@ -71,11 +71,21 @@
     position:relative;
 }
 
+.delete-btn {
+    padding: .5em;
+    border-radius: 01em;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .card {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
     
 }
 
