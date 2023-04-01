@@ -24,7 +24,9 @@ let currentQuestion = 0;
 let score = 0;
 
 let nextBtn = document.getElementById("next-btn");
+
 nextBtn.setAttribute("disabled", "disabled");
+nextBtn.parentElement;
 let quizQuestionContainer = document.getElementById("quiz-question");
 quizQuestionContainer.addEventListener("click", (event) => {
   let targetElement = event.target;

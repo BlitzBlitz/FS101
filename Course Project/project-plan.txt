@@ -18,7 +18,7 @@ Top Feautres:
             Message the dealer
 
     Admin:
-        List a property
+        List a property(Adding a new one)
         Edit a property
         Delete a property
         Display all properties
