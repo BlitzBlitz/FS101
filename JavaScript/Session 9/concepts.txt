@@ -7,6 +7,7 @@ CRUD
 Create 
     1. Take the date from the user (using a form), and a pop-up.
     2. Create a new obje ct with this data. (Make sure to create a unique data ID)
+   
     3. Add this object to the array. (aka the state).
     4. Update the UI. (UI should be in sync with the state.)
         Example:

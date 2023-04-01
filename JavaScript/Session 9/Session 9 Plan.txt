@@ -1,0 +1,78 @@
+Async JavaScript(Unlocking the cores/threads of you CPU)
+
+    What?   Async -> start now(in a diffrent thread, so we don`t stop the program) finish later
+    Why?    We use Async JS (with IO operations mostly) in order not to stop the program
+    How?    async keyword, Promises
+
+
+
+Taking a closer look at setTimeout(), setInterval()
+
+How Promises work
+ 
+Faking a REST API with json-server
+    1. Install NodeJs
+    2. Install json-server using npm
+    3. add "json": "json-server --watch db.json" at "scripts": at package.json
+    4. create a db.json file at the same folder with package.json
+    5. open the terminal at the same folder with package.json
+    6. run "npm run json"
+
+    https://github.com/typicode/json-server
+
+Making API calls with fetch()
+    1. this function takes some time to complete + things may go wrong
+            => This function will return a Promise to make our life easy
+    2. Because it returns a Promise we can use .then and .catch
+
+    3. if we want to chain another long-lasting task inside .then we return the Promise
+        EX:       .then((response) => {
+                    return response.json();         // another long-lasting task
+                  })
+                  .then((data) => {
+                    console.log(data);
+                   })
+                  .catch((error) => console.log(error));
+
+Working with real APIs
+    1. Creating (We expect the BE to give us the created element back, because we need to update the UI state)
+        a. Get the data from the user(using a form)
+        b. Build a body object with this data
+        c. Use the fetch function with options
+        d. check the reponse to update the state and display a confirmation or error message
+            EX:         .then((response) => {
+                            return response.json();        
+                        })
+                        .then((data) => {
+                            updateState(data);          //here you will change the state and then Update the UI
+                            updateUI();
+                        })
+                        .catch((error) => console.log(error));
+        e. Update UI
+    2. Reading
+        a. Get the data from the BackEnd using fetch
+        b. You can filter, sort, page the data depending on how the API is built (read the docs)
+            This can all be done using the query params
+    3. Update (We expect the BE to give us the update element back, because we need to update the UI state)
+        a. Get the data from the user(using a form)
+        b. Build a body object with this data
+        c. Use the fetch function with options and id as part of the URL
+            EX: "http://localhost:3000/posts/2"
+        d. check the reponse to update the state and display a confirmation or error message
+        e. Update UI
+
+    4. Delete
+        a. Get the id of the element that you want to delete
+        b. Use the fetch function with options and id as part of the URL
+            EX: "http://localhost:3000/posts/2"
+        d. check the reponse to update the state and display a confirmation or error message
+        e. Update UI
+
+
+async/await
+
+Local Storage
+
+ES6 Features 
+    Spread and Rest
+    Sets

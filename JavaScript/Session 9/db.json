@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "FS101",
+    "numberOfStudnets": 2,
+    "isOpen": true
+  },
+  {
+    "id": 2,
+    "name": "FS102",
+    "numberOfStudnets": 1,
+    "isOpen": false
+  }
+]
