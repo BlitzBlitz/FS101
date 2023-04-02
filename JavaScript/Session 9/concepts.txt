@@ -6,8 +6,8 @@ CRUD
 
 Create 
     1. Take the date from the user (using a form), and a pop-up.
-    2. Create a new obje ct with this data. (Make sure to create a unique data ID)
-   
+    2. Create a new object with this data. (Make sure to create a unique data ID)
+    2.5 Make a POST request to the backend.
     3. Add this object to the array. (aka the state).
     4. Update the UI. (UI should be in sync with the state.)
         Example:
@@ -18,10 +18,30 @@ Create
 
 Read
     1. fetch the date from the backend. 
-    2. display the data in the UI.
+    2. Save the fetched data into the state.
+    3. Update the UI.
     
     How?
        a. Select the container that you want to add the data to.
        b. for each data, create the html elements. (Use string literals to make your life easy).
        c. Add the created elements to the container element. (connect steps a and b).
+
+
+Update
+    1. Make sure that each HTML element that you want to Update has an ID.
+        if it doesn't, fix the create part and add an ID to the HTML elementwhen you create it.
+    2. Display a form field with the data of the element that you want to Update.
+    3. Follow create steps:
+        1. Take the date from the user (using a form), and a pop-up.
+        1.5 Make a PUT request to the backend including the ID.
+        2. Update the object corresponding to the ID.
+        3. Update this object to the array. (aka the state).
+        4. Update the UI. (UI should be in sync with the state.)
+        
+
+Delete
+    1. Make sure that each HTML element that you want to Delete has an ID.
+    2. Make a Delete request to the backend, which includes the ID.
+    3. Delete the element from the state.
+    4. Update the UI. 
 
