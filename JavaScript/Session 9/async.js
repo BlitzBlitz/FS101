@@ -83,21 +83,24 @@ let body = {
 //   })
 //   .catch((error) => console.log(error));
 
-// fetch("http://localhost:3000/posts/2", {
-//   method: "PUT",
-//   body: JSON.stringify(body),
-//   headers: {
-//     Accept: "application.json",
-//     "Content-Type": "application.json",
-//   },
-// })
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((error) => console.log(error));
+console.log(JSON.stringify(body));
+fetch("http://localhost:3000/users", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    name: "John Doe",
+    email: "john.doe@example.com",
+  }),
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
 // fetch("http://localhost:3000/posts/2", {
 //   method: "DELETE",

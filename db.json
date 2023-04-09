@@ -1,24 +1,24 @@
 {
-  "posts": [
+  "properties": [
     {
       "id": 1,
-      "title": "json-server1",
-      "author": "typicode"
+      "title": "New House 1",
+      "metrics": {
+        "views": 1,
+        "comments": 21,
+        "likes": 31
+      },
+      "desc": "1 This is a good house"
     },
     {
-      "id": 3,
-      "title": "json-server3",
-      "author": "typicode1"
+      "id": 2,
+      "title": "New House2",
+      "metrics": {
+        "views": 13,
+        "comments": 51,
+        "likes": 41
+      },
+      "desc": "2This is a good house"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

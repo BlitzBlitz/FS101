@@ -4,25 +4,27 @@ Tempate Link:
 
 Top Feautres:
     User:
-
         Any user:
-            See all the properties
-            Filter the properties
-            Message the dealer
+            See all the posts
+            Filter the post by category
+            Filter the post by date
+            Subscribe(by email)
         
         If logged in:
-            Add property to favourite
-            See all favourite properties
-            Delete property from favourite
-            See all viewed properties
-            Message the dealer
+            
+            CRUD a post (Create, Read, Update, Delete)
 
-    Admin:
-        List a property(Adding a new one)
-        Edit a property
-        Delete a property
-        Display all properties
-        Filter properties
+            Add post to favourite
+            See all posts posts
+            Delete posts from favourite
+            See all viewed posts
+            Message other writers
+
+    Admin(Manage users):
+        CRUD Users/Posts
+        Delete a user / post
+        Ban a user/post (inactive)
+        Filter users/posts
         
 
 
