@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Category</title>
+    <link rel="stylesheet" href="category.css" />
+    <script
+      src="https://kit.fontawesome.com/629ba0c7da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="brand">
+        <div class="logo">
+          <i class="fa-solid fa-bars"></i>
+          <img src="./assets/images/Wired.png" alt="" />
+        </div>
+        <div class="nav">
+          <ul id="categories-list">
+            <!-- <li><a href="#">BACKCHANNEL</a></li>
+            <li><a href="#">BUSINESS</a></li>
+            <li><a href="#">CULTURE</a></li>
+            <li><a href="#">GEAR</a></li>
+            <li><a href="#">IDEARS</a></li>
+            <li><a href="#">SCIENCE</a></li>
+            <li><a href="#">SECURITY</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="sign-div">
+        <label for=""><a href="#">SIGN IN</a></label>
+        <div class="btn-div">
+          <a href="#">
+            <div class="btn">SUBSCRIBE</div>
+          </a>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <h1 class="category-title" id="category-title"></h1>
+
+      <div class="main-posts-container" id="main-posts-container"></div>
+      <div class="main-sub-category-container" id="main-sub-category-container">
+        <span id="main-sub-category-title" class="sub-category-title"
+          >Why we hate streaming</span
+        >
+      </div>
+      <div class="sub-category">
+        <span id="sub-category-title" class="sub-category-title"
+          >Video Games</span
+        >
+        <div class="sub-category-1" id="sub-category-1"></div>
+      </div>
+      <div class="latest-posts">
+        <span id="sub-category-title" class="sub-category-title">Latest</span>
+        <div id="latest-posts"></div>
+      </div>
+      <div class="pagintation">
+        <button id="previous-btn">Previous</button>
+        <button id="first-page"></button>
+        <button id="second-page"></button>
+        <button id="third-page"></button>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+
+    <script src="./category.js"></script>
+  </body>
+</html>
