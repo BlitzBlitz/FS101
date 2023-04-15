@@ -17,6 +17,32 @@
       "title": "science"
     }
   ],
+  "subcategories": [
+    {
+      "id": 1,
+      "title": "crypto"
+    },
+    {
+      "id": 2,
+      "title": "books"
+    },
+    {
+      "id": 3,
+      "title": "phyichs"
+    },
+    {
+      "id": 4,
+      "title": "math"
+    },
+    {
+      "id": 5,
+      "title": "javascript"
+    },
+    {
+      "id": 6,
+      "title": "cooking"
+    }
+  ],
   "posts": [
     {
       "id": 1,
@@ -31,14 +57,13 @@
       "imgUrl": "assets/images/post1.png",
       "category": "business",
       "subcategory": "crypto",
-
       "views": 2
     },
     {
       "id": 2,
       "title": "Post 2",
       "author": {
-        "name": "Brad",
+        "name": "Brad2",
         "sirname": "Marshall"
       },
       "desc": "Now they’re stepping down, and the new CEO is focused on saving the business.",
@@ -53,7 +78,7 @@
       "id": 3,
       "title": "Post 3",
       "author": {
-        "name": "Brad",
+        "name": "Brad3",
         "sirname": "Marshall"
       },
       "desc": "Now they’re stepping down, and the new CEO is focused on saving the business.",
@@ -62,14 +87,13 @@
       "imgUrl": "assets/images/post2.png",
       "category": "science",
       "subcategory": "physics",
-
       "viewCounter": 5
     },
     {
       "id": 4,
       "title": "Post 4",
       "author": {
-        "name": "Brad",
+        "name": "Brad4",
         "sirname": "Marshall"
       },
       "desc": "Now they’re stepping down, and the new CEO is focused on saving the business.",

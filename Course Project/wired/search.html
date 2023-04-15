@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wired | Search</title>
+    <link rel="stylesheet" href="search.css" />
+    <script
+      src="https://kit.fontawesome.com/629ba0c7da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="brand">
+        <button id="menu-icon"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./assets/images/Wired.png" alt=""
+          /></a>
+        </div>
+        <div class="nav">
+          <ul id="categories-list"></ul>
+        </div>
+      </div>
+      <div class="sign-div">
+        <a href="#">SIGN IN</a>
+        <div class="btn-div">
+          <a href="#"> SUBSCRIBE </a>
+          <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="side-menu" class="side-menu d-none">
+      <ul id="side-menu-categories"></ul>
+      <hr />
+      <div class="side-links">
+        <a href="search.html">Search</a>
+        <a href="login.html">Sign in</a>
+        <div id="subcategories"></div>
+      </div>
+      <hr />
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-facebook fa-2x"></i>
+      </div>
+    </div>
+    <div class="page" id="page">
+      <h1 class="search-title">Search stories from WIRED</h1>
+      <div class="search-panel">
+        <form action="" id="search-form">
+          <div class="search-bar">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input
+              type="text"
+              class="search-input"
+              id="search-input"
+              placeholder="Try 'Best of Science'"
+            />
+          </div>
+          <button type="submit" class="search-btn">SEARCH</button>
+        </form>
+
+        <div class="filters">
+          <p>10,000+ stories from WIRED</p>
+          <div>
+            <label for="filter">Sort by</label>
+            <select name="sort-by" id="sort-by">
+              <option value="relevance">Relevance</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="search-posts" id="search-posts"></div>
+
+        <div class="most-recent">
+          <h1>MOST POPULAR</h1>
+          <div id="most-recent"></div>
+        </div>
+      </div>
+      <div class="pagintation">
+        <button id="previous-btn">Previous</button>
+        <button id="first-page"></button>
+        <button id="second-page"></button>
+        <button id="third-page"></button>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+
+    <script src="./search.js"></script>
+  </body>
+</html>

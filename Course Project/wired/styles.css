@@ -821,6 +821,11 @@ hr {
     position: fixed;
     top: 0;
   }
+  .logo a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
   .logo i,
   .sign-div {
     display: none;

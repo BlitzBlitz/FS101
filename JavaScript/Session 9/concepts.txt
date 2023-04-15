@@ -17,6 +17,7 @@ Create
 
 
 Read
+    0. decalre the state (tipically an array at the top of the js file)
     1. fetch the date from the backend. 
     2. Save the fetched data into the state.
     3. Update the UI.
