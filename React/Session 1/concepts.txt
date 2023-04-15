@@ -1,0 +1,26 @@
+React
+    What?
+        What is a SPA and how does it work
+    Why?
+    How?
+
+Javascript and React
+
+Before using React
+    reactjs.org is your best friend
+
+Using React (reactjs.org)
+        With CDN(importing it from the web)
+        Downloading it to our project
+            Using React for partial parts of the project
+            Building everything using React
+Using JSX
+    Template expression
+    Variables
+    Events
+Creating a React app using npx
+
+Know your files and folders
+
+Using static assets
+
