@@ -1,3 +1,6 @@
+import getRequest from "./fetch";
+import { postData } from "./fetch";
+
 let categories = [];
 let todaysPickPosts = [];
 fetch("http://localhost:3000/categories")
@@ -20,7 +23,7 @@ fetch("http://localhost:3000/posts?_limit=3")
   })
   .then((data) => {
     console.log(data);
-    todaysPickPosts = data.filter((post) => post.timestamp > 1681013672250);
+    todaysPickPosts = data.filter((post) => post.timestamp > 1681013672240);
     // let filteredPost = [];
     // for (let index = 0; index < data.length; index++) {
     //   if (data[index].timestamp > 1681013672250) {

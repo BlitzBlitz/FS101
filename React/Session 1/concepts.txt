@@ -1,10 +1,28 @@
 React
     What?
-        What is a SPA and how does it work
+        React is JS library that helps to build SPA
+
+        What is a SPA and how does it work?
+            SPA, single page app
+            The page will load once and then everything
+            will be taken from the server as chunks of HTML,CSS and JS
     Why?
+        Better development process
+        Better user experince
+        We can use other libraries with React to make our job easier
+            Compontent libraries(Material UI)
+            State Managment libraries(Redux)
+        We can use React as part of our project
     How?
+        We import the React library
+            CDN - content dilivery network
+            NPM - node package manager(You have to have nodeJs installed)
+        Create our own HTML TAGS
+        Compontents === new TAGS
 
 Javascript and React
+    React is just a couple of functions that mostly deal with keeping the state in sync the UI 
+    React makes our Code Reusable
 
 Before using React
     reactjs.org is your best friend
@@ -15,9 +33,22 @@ Using React (reactjs.org)
             Using React for partial parts of the project
             Building everything using React
 Using JSX
+
+
     Template expression
+        Only one top-level element
+        class -> className
     Variables
+        ${logo} -> {logo}
+        {2===3 ? "True" : "False"}
+        {name.toUpperCase()}
+        href = {url}
     Events
+        onClick={printEventInfo}                when having no arguments to take
+        onClick={(e) => printEventInfo(e)}      when having some arguments to take
+
+How Import/Exports work in JS?
+
 Creating a React app using npx
 
 Know your files and folders
