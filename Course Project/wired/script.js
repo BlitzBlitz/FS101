@@ -1,6 +1,3 @@
-import getRequest from "./fetch";
-import { postData } from "./fetch";
-
 let categories = [];
 let todaysPickPosts = [];
 fetch("http://localhost:3000/categories")
