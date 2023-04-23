@@ -1,0 +1,67 @@
+How useState works
+    useState is a React hook (a function that will also Update the UI)
+    It updates the UI by RERUNNING the Component function
+    It also updates the state variable
+
+How does React render the template
+    The virtual DOM
+
+High order functions they may:
+    1. Take another function as arguments
+    2. Return another function
+
+Array functions (Recap) [map, filter, slice]
+    map -> turn the items of an array into a different thing
+            EX: turn titles` names -> h1 elements
+        categoriesNames.map(name => {
+            return (
+                <h1>{name}</h1>
+            )
+        })
+        salariesList.map(salary => salary - salary * 0.05);
+
+        [100, 10]  => [95, 9,95]
+
+
+    filter -> used for filtering out (deleting)
+        categoriesNames.filter(name => {
+            if(name == "Science"){
+                return false;              //don`t include this name(element) at the result array
+            }else{
+                return true;                //include this name(element) at the result array
+            }
+        })
+        categoriesNames.filter(name => name != "Science")
+
+Displaying a list of elements(Recap)
+    using the "key" attribute
+    why not to use index
+        it`s unique
+        it`s not an identifier
+            everytime you remove/add something the index will change
+        
+            0           1           2
+        ["Science", "Business", "Sport"]
+
+            0           1
+        ["Science", "Sport"]
+
+CRUD with state
+    Create  (getting the state varaible and the setState function)              useState
+    Read    (displaying the items)                                              .map
+    Update  (using the spred operator "...")                                    setCategories
+    Delete  (using fliter)                                                      setCategories
+
+Using the previous state when updating or deleting
+    We do this by giving the "setCategories" another function as argument
+        This gives us teh oppertunity to get the previous state variable
+    When giving a variable to the "setCategories" you may be gambling 
+    as you won`t have the latest snapshot of the state
+
+Terminary operator ? (Recap)
+Conditional classes
+
+Conditional templates 
+
+useState limitations
+

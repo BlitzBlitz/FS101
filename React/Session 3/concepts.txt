@@ -1,0 +1,29 @@
+React Components
+    State + JSX
+How do components pass data between each other
+
+    Parent -> Child (data props)            The parent wants to change the state of the child
+    Child -> Parent (function props)        The child wants to change the state of the parent  
+
+Using destruction to make life easy
+    Destruction means truning the fields of an object into varaibles
+    EX:         let user = {
+                        name: "Ben",
+                        gender: "M",
+                        isActive: true
+                }
+                {name, gender, isActive} = user
+                log(name);
+The Children prop
+
+React Fragments
+
+React Portals
+
+Styling React Components
+    Global Styling
+    Component level styling are global also(How to scope the style)
+    Conditional classes(using ? operator)
+
+
+Developing a pop-up

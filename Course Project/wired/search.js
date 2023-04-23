@@ -1,4 +1,4 @@
-import { fetchData } from "./fetch";
+// import { fetchData } from "./fetch";
 let categories = [];
 let posts = [];
 let mostPopular = [];
@@ -10,29 +10,29 @@ menuIconElement.addEventListener("click", toggleSideMenu);
 let sideMenuElement = document.getElementById("side-menu");
 let pageElement = document.getElementById("page");
 
-// fetch("http://localhost:3000/categories")
-//   .then((response) => {
-//     console.log(response);
-//     return response.json();
-//   })
-//   .then((data) => {
-//     categories = data;
-//     displayCategories("categories-list");
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
-
-fetchData(
-  "http://localhost:3000/categories",
-  (data) => {
+fetch("http://localhost:3000/categories")
+  .then((response) => {
+    console.log(response);
+    return response.json();
+  })
+  .then((data) => {
     categories = data;
     displayCategories("categories-list");
-  },
-  (error) => {
+  })
+  .catch((error) => {
     console.log(error);
-  }
-);
+  });
+
+// fetchData(
+//   "http://localhost:3000/categories",
+//   (data) => {
+//     categories = data;
+//     displayCategories("categories-list");
+//   },
+//   (error) => {
+//     console.log(error);
+//   }
+// );
 
 function displayCategories(containerId) {
   let categoriesListElement = document.getElementById(containerId);
@@ -48,30 +48,30 @@ function displayCategories(containerId) {
   });
 }
 
-// fetch("http://localhost:3000/posts?_sort=timestamp&_order=asc&_limit=5")
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     console.log(data);
-//     posts = data;
-//     displayPosts(posts, "most-recent", "search-post-card");
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
-
-fetchData(
-  "http://localhost:3000/posts?_sort=timestamp&_order=asc&_limit=5",
-  (data) => {
+fetch("http://localhost:3000/posts?_sort=timestamp&_order=asc&_limit=5")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
     console.log(data);
     posts = data;
     displayPosts(posts, "most-recent", "search-post-card");
-  },
-  (error) => {
+  })
+  .catch((error) => {
     console.log(error);
-  }
-);
+  });
+
+// fetchData(
+//   "http://localhost:3000/posts?_sort=timestamp&_order=asc&_limit=5",
+//   (data) => {
+//     console.log(data);
+//     posts = data;
+//     displayPosts(posts, "most-recent", "search-post-card");
+//   },
+//   (error) => {
+//     console.log(error);
+//   }
+// );
 
 fetch("http://localhost:3000/posts?_limit=10")
   .then((response) => {

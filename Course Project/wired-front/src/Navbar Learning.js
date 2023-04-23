@@ -1,7 +1,9 @@
 import { useState } from "react";
 
+//CRUD operation with state
 function Navbar() {
   const [categories, setCategories] = useState([
+    //---------------------------------------------------------CREATE
     {
       id: 1,
       title: "Business",
@@ -20,16 +22,14 @@ function Navbar() {
     let elementId = +event.target.id;
     console.log(event);
     console.log(elementId);
-    // setCategories(
-    //   categories.filter((category) => category.id !== categories.length - 1)
-    // );
+    //---------------------------------------------------------DELETE
     setCategories((prevState) =>
       prevState.filter((category) => category.id !== elementId)
     );
   }
   function addCategory() {
     // setCategories((prevState) => {
-    //   let newCategories = prevState; //shallow copy
+    //   let newCategories = prevState;       //shallow copy
     //   newCategories.push({
     //     id: 4,
     //     title: "IT",
@@ -39,6 +39,9 @@ function Navbar() {
     // });
 
     //setCategories([newCategory, ...categories]); //[newCategory, element1, element2, element3 ];
+
+    //---------------------------------------------------------UPDATE
+
     setCategories((prevState) => {
       let newCategory = {
         id: prevState.length + 1,
@@ -62,6 +65,8 @@ function Navbar() {
 
       <div className="nav">
         <ul id="categories-list">
+          {/* ---------------------------------------------------------READ */}
+
           {categories.map((category, index) => {
             return (
               <li key={index}>
