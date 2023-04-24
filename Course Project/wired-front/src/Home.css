@@ -1,0 +1,6 @@
+.home {
+  border: 2px solid green;
+  padding: 2em;
+  padding-top: 8em;
+  display: flex;
+}

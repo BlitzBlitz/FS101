@@ -1,0 +1,85 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid gray;
+  background-color: var(--text-white);
+  position: fixed;
+  top: 0;
+  padding: 0.5em 1em;
+  z-index: 2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 120px;
+  margin-left: 1em;
+}
+.nav-categories ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 1em;
+}
+
+.nav-categories ul li a {
+  color: black;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.sign-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sing-in-btn {
+  padding: 0 1em;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid gray;
+  padding: 0 1em;
+}
+
+.btn-div i {
+  margin-right: 30px;
+  margin-left: 5px;
+}
+
+.btn {
+  font-size: 11px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.sign-div label a {
+  color: black;
+  margin-left: 12px;
+  font-size: 11px;
+  border-radius: 0px;
+  border: none;
+}
+
+.main-div {
+  width: 100%;
+  /* border: 1px solid rebeccapurple; */
+  height: auto;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

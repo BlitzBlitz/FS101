@@ -1,6 +1,6 @@
 import { useState } from "react";
-
-function Navbar() {
+import "./Navbar.css";
+function Navbar({ setIsSideMenuOpen }) {
   const [categories, setCategories] = useState([
     {
       id: 1,
@@ -16,65 +16,45 @@ function Navbar() {
     },
   ]);
 
-  function deleteCategory(event) {
-    let elementId = +event.target.id;
-    console.log(event);
-    console.log(elementId);
-    // setCategories(
-    //   categories.filter((category) => category.id !== categories.length - 1)
-    // );
-    setCategories((prevState) =>
-      prevState.filter((category) => category.id !== elementId)
-    );
-  }
-  function addCategory() {
-    // setCategories((prevState) => {
-    //   let newCategories = prevState; //shallow copy
-    //   newCategories.push({
-    //     id: 4,
-    //     title: "IT",
-    //   });
-    //   console.log(newCategories);
-    //   return newCategories;
-    // });
-
-    //setCategories([newCategory, ...categories]); //[newCategory, element1, element2, element3 ];
-    setCategories((prevState) => {
-      let newCategory = {
-        id: prevState.length + 1,
-        title: "IT",
-      };
-      let newCategories = [newCategory, ...prevState];
-      console.log(newCategories);
-      return newCategories;
-    });
+  function toggleSideMenu() {
+    setIsSideMenuOpen((prevState) => !prevState);
   }
 
   return (
-    <div>
-      <i className="fa-solid fa-bars"></i>
+    <div className="navbar">
+      <div className="row">
+        <div className="logo">
+          <button onClick={toggleSideMenu}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
+          <a href="index.html">
+            <img src="./assets/images/Wired.png" alt="" />
+          </a>
+        </div>
 
-      <div className="logo">
-        <a href="index.html">
-          <img src="./assets/images/Wired.png" alt="" />
-        </a>
+        <div className="nav-categories">
+          <ul>
+            {categories.map((category) => {
+              return (
+                <li key={category.id}>
+                  <a>{category.title.toUpperCase()}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
-
-      <div className="nav">
-        <ul id="categories-list">
-          {categories.map((category, index) => {
-            return (
-              <li key={index}>
-                <a>{category.title.toUpperCase()}</a>
-                <button id={category.id} onClick={(e) => deleteCategory(e)}>
-                  Delete Category
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+      <div className="sign-div">
+        <a className="sing-in-btn">SIGN IN</a>
+        <div className="btn-div">
+          <a href="#" className="bg-blue btn">
+            SUBSCRIBE
+          </a>
+          <a href="search.html">
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
       </div>
-      <button onClick={() => addCategory()}>Add Category</button>
     </div>
   );
 }

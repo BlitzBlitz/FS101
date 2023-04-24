@@ -1,0 +1,10 @@
+.sideMenu {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  border: 2px solid red;
+  position: absolute;
+  top: 4em;
+  left: 0;
+  z-index: 10;
+}

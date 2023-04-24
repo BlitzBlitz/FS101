@@ -1,3 +1,52 @@
-img {
-  width: 50px;
+.card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+.card img {
+  width: 100%;
+}
+.card .category {
+  letter-spacing: 0.2rem;
+  margin: 0.5em 0;
+}
+.card .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.card .title:hover {
+  text-decoration: underline;
+}
+.card .desc {
+  margin-bottom: 1.5em;
+}
+
+.card-row img {
+  width: 50%;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 1em 0;
+  color: black;
+}
+.card-row > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-row img {
+  margin-left: 1em;
+}
+.card-row .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card-row .title:hover {
+  text-decoration: underline;
 }
