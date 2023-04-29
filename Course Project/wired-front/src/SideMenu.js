@@ -60,14 +60,14 @@ export default function SideMenu() {
       <div className="side-links">
         <a href="search.html">Search</a>
         <a href="login.html">Sign in</a>
-        <div id="subcategories">
+        <ul id="subcategories">
           {subCategories.map((subCategory) => (
             <li key={subCategory.id}>
               {subCategory.title.charAt(0).toUpperCase() +
                 subCategory.title.slice(1)}
             </li>
           ))}
-        </div>
+        </ul>
       </div>
       <hr />
       <div className="social-icons">
