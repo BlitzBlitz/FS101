@@ -47,7 +47,7 @@ Arrays in depth
 ***6. Chaning functions
         
         Salaries [1000, 200, 500, 6700, 8900, 9000]
-        Tax all the worker having the a salary over 5000$ by 20% and find the sum of the taxes
+        Tax all the worker having  a salary over 5000$ by 20% and find the sum of the taxes
 
 6. Exercises
 

@@ -1,1 +1,13 @@
-Forms
+Delevoping all other pages to recap all the concepts learned
+    1) Category page
+    2) Article page
+    3) Login page
+    4) Search page
+
+Concept recap:
+    1) Component communication
+            Parent->Child
+            Child->Parent
+    2) Styling
+    3) Building reusable components
+    4) Component-based mindset

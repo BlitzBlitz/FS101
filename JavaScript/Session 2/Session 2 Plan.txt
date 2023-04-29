@@ -7,7 +7,7 @@
 1. Building conditions and using if statments
     a. Build conditions using the Comparision (<,>,<=,>=, ==, !=, ===, !==)
     b. We use the conditions inside the if statment
-    c. We can combined more than one condition using logical operators(&&, ||)
+    c. We can combined more than one condition using logical operators(&&, ||, !)
         true && true => true
         true && false => false
         false && true => false

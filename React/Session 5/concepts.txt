@@ -1,0 +1,13 @@
+Fetching data
+    useEffect
+        What
+        Why
+        How
+
+Taking advantage of the dependency array
+    using query params
+
+Concept Recap:
+    1) Component communication
+            Parent->Child
+            Child->Parent

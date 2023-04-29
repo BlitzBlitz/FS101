@@ -7,7 +7,7 @@
         .querySelector()
         .getElementById(), sbyClass(), sByTagName()
 
-3. Changin a HTML element
+3. Changing a HTML element
         .innerText
         .innerHtml
         .setAttribute
