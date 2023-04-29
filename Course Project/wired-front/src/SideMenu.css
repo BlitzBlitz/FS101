@@ -6,5 +6,56 @@
   position: absolute;
   top: 4em;
   left: 0;
-  z-index: 10;
+  z-index: 1;
+  padding: 3em 4em;
+}
+#side-menu-categories {
+  list-style: none;
+  border-bottom: 1px solid gray;
+}
+#side-menu-categories {
+  font-size: 3rem;
+}
+#side-menu-categories li {
+  margin: 0.5em 0;
+}
+#side-menu-categories li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+#side-menu-categories li a:hover {
+  color: var(--button-color);
+  text-decoration: underline;
+}
+
+.side-links {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid gray;
+}
+
+.social-icons {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons i {
+  margin: 0 1em;
+}
+.side-links {
+  padding: 2em 0;
+}
+.side-links a {
+  text-decoration: none;
+  color: black;
+  margin: 1em 0;
+}
+
+#subcategories {
+  list-style: none;
+}
+#subcategories li {
+  margin: 1em 0;
 }

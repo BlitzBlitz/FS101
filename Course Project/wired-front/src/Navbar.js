@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
-function Navbar({ setIsSideMenuOpen }) {
+function Navbar({ isSideMenuOpen, setIsSideMenuOpen }) {
   const [categories, setCategories] = useState([
     {
       id: 1,
@@ -24,8 +24,12 @@ function Navbar({ setIsSideMenuOpen }) {
     <div className="navbar">
       <div className="row">
         <div className="logo">
-          <button onClick={toggleSideMenu}>
-            <i className="fa-solid fa-bars"></i>
+          <button className="side-menu-btn" onClick={toggleSideMenu}>
+            <i
+              className={
+                "fa-solid " + (isSideMenuOpen ? "fa-close" : "fa-bars")
+              }
+            ></i>
           </button>
           <a href="index.html">
             <img src="./assets/images/Wired.png" alt="" />

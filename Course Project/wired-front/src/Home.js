@@ -1,7 +1,8 @@
-import Hero from './Hero';
-import './Home.css';
-import SidePostContainer from './SidePostContainer';
-import Trending from './Trending';
+import FeaturedContainer from "./FeaturedContainer";
+import Hero from "./Hero";
+import "./Home.css";
+import SidePostContainer from "./SidePostContainer";
+import Trending from "./Trending";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <SidePostContainer></SidePostContainer>
       </div>
       <Trending></Trending>
+      <FeaturedContainer></FeaturedContainer>
     </>
   );
 }

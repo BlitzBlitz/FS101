@@ -49,7 +49,11 @@ export default function SideMenu() {
     <div className="sideMenu">
       <ul id="side-menu-categories">
         {categories.map((category) => (
-          <li key={category.id}>{category.title}</li>
+          <li key={category.id}>
+            <a href="#">
+              {category.title.charAt(0).toUpperCase() + category.title.slice(1)}
+            </a>
+          </li>
         ))}
       </ul>
       <hr />
@@ -58,7 +62,10 @@ export default function SideMenu() {
         <a href="login.html">Sign in</a>
         <div id="subcategories">
           {subCategories.map((subCategory) => (
-            <li key={subCategory.id}>{subCategory.title}</li>
+            <li key={subCategory.id}>
+              {subCategory.title.charAt(0).toUpperCase() +
+                subCategory.title.slice(1)}
+            </li>
           ))}
         </div>
       </div>

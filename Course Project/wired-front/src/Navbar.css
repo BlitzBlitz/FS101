@@ -10,7 +10,17 @@
   padding: 0.5em 1em;
   z-index: 2;
 }
-
+.side-menu-btn {
+  border: 0;
+  background-color: transparent;
+  width: 20px;
+}
+.side-menu-btn:hover {
+  color: var(--button-color);
+}
+.side-menu-btn i {
+  font-size: 2rem;
+}
 .logo {
   display: flex;
   align-items: center;
