@@ -1,0 +1,17 @@
+.trending-stories {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  width: 100%;
+  position: relative;
+}
+
+.trending-stories div {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trending-stories img {
+  width: 90%;
+}
