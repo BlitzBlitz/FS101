@@ -1,23 +1,28 @@
 import "./App.css";
-import Navbar from "./Navbar";
-import Home from "./Home";
-import SideMenu from "./SideMenu";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Category from "./pages/Category";
+import SideMenu from "./components/SideMenu";
 import { useState } from "react";
-import Footer from "./Footer";
 
 function App() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
-
+  const [currentPage, setCurrentPage] = useState("home");
+  const [categoryName, setCategoryName] = useState("");
   return (
     <div className="app">
       <Navbar
         isSideMenuOpen={isSideMenuOpen}
         setIsSideMenuOpen={setIsSideMenuOpen}
+        setCurrentPage={setCurrentPage}
+        setCategoryName={setCategoryName}
       ></Navbar>
       {isSideMenuOpen && <SideMenu></SideMenu>}
 
-      {!isSideMenuOpen && <Home></Home>}
-      <Footer></Footer>
+      {currentPage === "home" && <Home></Home>}
+      {currentPage === "category" && (
+        <Category categoryName={categoryName}></Category>
+      )}
     </div>
   );
 }

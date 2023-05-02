@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./Navbar.css";
-function Navbar({ isSideMenuOpen, setIsSideMenuOpen }) {
+function Navbar({
+  isSideMenuOpen,
+  setIsSideMenuOpen,
+  setCurrentPage,
+  setCategoryName,
+}) {
   const [categories, setCategories] = useState([
     {
       id: 1,
@@ -19,6 +24,10 @@ function Navbar({ isSideMenuOpen, setIsSideMenuOpen }) {
   function toggleSideMenu() {
     setIsSideMenuOpen((prevState) => !prevState);
   }
+  function switchPage(page, categoryName) {
+    setCurrentPage(page);
+    setCategoryName(categoryName);
+  }
 
   return (
     <div className="navbar">
@@ -31,9 +40,9 @@ function Navbar({ isSideMenuOpen, setIsSideMenuOpen }) {
               }
             ></i>
           </button>
-          <a href="index.html">
-            <img src="./assets/images/Wired.png" alt="" />
-          </a>
+          <button href="index.html" onClick={() => switchPage("home", "")}>
+            <img src="/assets/images/Wired.png" alt="" />
+          </button>
         </div>
 
         <div className="nav-categories">
@@ -41,7 +50,11 @@ function Navbar({ isSideMenuOpen, setIsSideMenuOpen }) {
             {categories.map((category) => {
               return (
                 <li key={category.id}>
-                  <a>{category.title.toUpperCase()}</a>
+                  <button
+                    onClick={() => switchPage("category", category.title)}
+                  >
+                    {category.title.toUpperCase()}
+                  </button>
                 </li>
               );
             })}

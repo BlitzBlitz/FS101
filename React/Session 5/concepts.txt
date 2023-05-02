@@ -1,4 +1,9 @@
 Fetching data
+    Careful:
+        Don`t call the fetch() function directly as it will result in an infinite loop
+        This is becase when you call the setter inside the fetch() react will reRun the 
+        function of the component
+        Which will call the fetch again
     useEffect
         What
         Why

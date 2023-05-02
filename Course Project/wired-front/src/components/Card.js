@@ -16,7 +16,7 @@ function Card({
       id={postOfCard.id}
     >
       <img src={postOfCard.imgUrl} alt="" />
-      <div className="d-column">
+      <div className="d-column content">
         <span className={isCategoryHidden ? "hidden" : "category"}>
           {postOfCard.category.toUpperCase()}
         </span>
