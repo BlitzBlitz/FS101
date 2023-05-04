@@ -1,0 +1,22 @@
+React router
+    What
+    Why
+    How
+
+BrowserRouter Component
+
+Switch Component
+
+Route Component
+    path attribute
+    exact attribute
+
+From <a> to Links and NavLink
+    Why use Links/NavLinks instead of <a>
+
+Route Parameters
+    useParams
+
+Query Parameters
+    useLocation
+
