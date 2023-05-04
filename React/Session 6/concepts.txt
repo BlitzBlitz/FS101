@@ -17,6 +17,9 @@ From <a> to Links and NavLink
 Route Parameters
     useParams
 
+Dynamic ridirection
+    the page is not redirected by a link element but from JS
+
 Query Parameters
     useLocation
 

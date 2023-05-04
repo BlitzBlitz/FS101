@@ -1,0 +1,11 @@
+.featured-container {
+  padding: 2em;
+  position: relative;
+}
+.featured-sub-container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(197, 197, 197, 0.473);
+  margin-top: 1em;
+  padding-top: 1em;
+}

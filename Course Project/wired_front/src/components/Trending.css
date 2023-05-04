@@ -1,0 +1,20 @@
+.trending-stories {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 2em;
+}
+
+.card-trending {
+  width: 20%;
+}
+
+.card-container {
+  border-top: 2px solid black;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
+}

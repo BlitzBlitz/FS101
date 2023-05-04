@@ -20,43 +20,81 @@
   "posts": [
     {
       "id": 1,
-      "title": "Lyft’s Vibe Shift Signals the End of the Gig Economy Dream",
-      "author": "AARIAN MARSHALL",
+      "title": "This is post 1 of 6",
+      "author": {
+        "name": "Brad",
+        "sirname": "Marshall"
+      },
       "desc": "The company's founders promised good vibes and greener cities. Now they’re stepping down, and the new CEO is focused on saving the business.",
       "content": "AT A LOCATION he keeps secret, John Honovich was on his laptop, methodically scouring every link on a website for a conference half a world away. Hikvision, the world’s largest security camera manufacturer, was hosting the event—the 2018 AI Cloud World Summit—in its hometown of Hangzhou, a city of about 10 million people not far from Shanghai. Honovich, the founder of a small trade publication that covered video surveillance technology, wanted to find out what the latest Hikvision gear could do.He zeroed in on one section of the conference agenda titled “Eco-Friendly, Peaceful, Relaxed” and found a description of an AI-powered system installed around Mount Tai, a historically sacred mountain in Shandong. A video showed Hikvision cameras pointed at tourists climbing the thousands of stone steps leading to the famous peak. Piano music played as a narrator explained, in Mandarin with English subtitles, that the cameras were there “to identify all visitors to ensure the safety of all.” The video cut to a shot of a computer screen, and Honovich hit pause. He saw a zoomed-in view of one visitor’s face. Below it was data that the camera’s AI had inferred. Honovich downloaded the video and took screenshots of the computer screen, for safekeeping. ",
       "timestamp": 345673562123,
-      "imgUrl": "/assets/images/post1",
+      "imgUrl": "/assets/images/post1.png",
       "category": "science"
     },
     {
       "id": 2,
-      "title": "This is post 2 of 2",
-      "author": "Brad Marshal",
+      "title": "This is post 2 of 6",
+      "author": {
+        "name": "Brad",
+        "sirname": "Marshall"
+      },
       "desc": "Now they’re stepping down, and the new CEO is focused on saving the business.",
       "content": "Methodically scouring every link on a website for a conference half a world away. Hikvision, the world’s largest security camera manufacturer, was hosting the event—the 2018 AI Cloud World Summit—in its hometown of Hangzhou, a city of about 10 million people not far from Shanghai. Honovich, the founder of a small trade publication that covered video surveillance technology, wanted to find out what the latest Hikvision gear could do.He zeroed in on one section of the conference agenda titled “Eco-Friendly, Peaceful, Relaxed” and found a description of an AI-powered system installed around Mount Tai, a historically sacred mountain in Shandong. A video showed Hikvision cameras pointed at tourists climbing the thousands of stone steps leading to the famous peak. Piano music played as a narrator explained, in Mandarin with English subtitles, that the cameras were there “to identify all visitors to ensure the safety of all.” The video cut to a shot of a computer screen, and Honovich hit pause. He saw a zoomed-in view of one visitor’s face. Below it was data that the camera’s AI had inferred. Honovich downloaded the video and took screenshots of the computer screen, for safekeeping. ",
       "timestamp": 345673564123,
-      "imgUrl": "/assets/images/post2",
+      "imgUrl": "/assets/images/post2.png",
       "category": "science"
     },
     {
       "id": 3,
-      "title": "This is post 3 of 4",
-      "author": "AARIAN MARSHALL",
+      "title": "This is post 3 of 6",
+      "author": {
+        "name": "Brad",
+        "sirname": "Marshall"
+      },
       "desc": "The company's founders promised good vibes and greener cities. Now they’re stepping down, and the new CEO is focused on saving the business.",
       "content": "AT A LOCATION he keeps secret, John Honovich was on his laptop, methodically scouring every link on a website for a conference half a world away. Hikvision, the world’s largest security camera manufacturer, was hosting the event—the 2018 AI Cloud World Summit—in its hometown of Hangzhou, a city of about 10 million people not far from Shanghai. Honovich, the founder of a small trade publication that covered video surveillance technology, wanted to find out what the latest Hikvision gear could do.He zeroed in on one section of the conference agenda titled “Eco-Friendly, Peaceful, Relaxed” and found a description of an AI-powered system installed around Mount Tai, a historically sacred mountain in Shandong. A video showed Hikvision cameras pointed at tourists climbing the thousands of stone steps leading to the famous peak. Piano music played as a narrator explained, in Mandarin with English subtitles, that the cameras were there “to identify all visitors to ensure the safety of all.” The video cut to a shot of a computer screen, and Honovich hit pause. He saw a zoomed-in view of one visitor’s face. Below it was data that the camera’s AI had inferred. Honovich downloaded the video and took screenshots of the computer screen, for safekeeping. ",
       "timestamp": 345673562123,
-      "imgUrl": "/assets/images/post1",
-      "category": "science"
+      "imgUrl": "/assets/images/post1.png",
+      "category": "business"
     },
     {
       "id": 4,
-      "title": "This is post 4 of 4",
-      "author": "Brad Marshal",
+      "title": "This is post 4 of 6",
+      "author": {
+        "name": "Brad",
+        "sirname": "Marshall"
+      },
       "desc": "Now they’re stepping down, and the new CEO is focused on saving the business.",
       "content": "Methodically scouring every link on a website for a conference half a world away. Hikvision, the world’s largest security camera manufacturer, was hosting the event—the 2018 AI Cloud World Summit—in its hometown of Hangzhou, a city of about 10 million people not far from Shanghai. Honovich, the founder of a small trade publication that covered video surveillance technology, wanted to find out what the latest Hikvision gear could do.He zeroed in on one section of the conference agenda titled “Eco-Friendly, Peaceful, Relaxed” and found a description of an AI-powered system installed around Mount Tai, a historically sacred mountain in Shandong. A video showed Hikvision cameras pointed at tourists climbing the thousands of stone steps leading to the famous peak. Piano music played as a narrator explained, in Mandarin with English subtitles, that the cameras were there “to identify all visitors to ensure the safety of all.” The video cut to a shot of a computer screen, and Honovich hit pause. He saw a zoomed-in view of one visitor’s face. Below it was data that the camera’s AI had inferred. Honovich downloaded the video and took screenshots of the computer screen, for safekeeping. ",
       "timestamp": 345673564123,
-      "imgUrl": "/assets/images/post2",
+      "imgUrl": "/assets/images/post2.png",
       "category": "science"
+    },
+    {
+      "id": 5,
+      "title": "This is post 5 of 6",
+      "author": {
+        "name": "Brad",
+        "sirname": "Marshall"
+      },
+      "desc": "The company's founders promised good vibes and greener cities. Now they’re stepping down, and the new CEO is focused on saving the business.",
+      "content": "AT A LOCATION he keeps secret, John Honovich was on his laptop, methodically scouring every link on a website for a conference half a world away. Hikvision, the world’s largest security camera manufacturer, was hosting the event—the 2018 AI Cloud World Summit—in its hometown of Hangzhou, a city of about 10 million people not far from Shanghai. Honovich, the founder of a small trade publication that covered video surveillance technology, wanted to find out what the latest Hikvision gear could do.He zeroed in on one section of the conference agenda titled “Eco-Friendly, Peaceful, Relaxed” and found a description of an AI-powered system installed around Mount Tai, a historically sacred mountain in Shandong. A video showed Hikvision cameras pointed at tourists climbing the thousands of stone steps leading to the famous peak. Piano music played as a narrator explained, in Mandarin with English subtitles, that the cameras were there “to identify all visitors to ensure the safety of all.” The video cut to a shot of a computer screen, and Honovich hit pause. He saw a zoomed-in view of one visitor’s face. Below it was data that the camera’s AI had inferred. Honovich downloaded the video and took screenshots of the computer screen, for safekeeping. ",
+      "timestamp": 345673562123,
+      "imgUrl": "/assets/images/post1.png",
+      "category": "business"
+    },
+    {
+      "id": 6,
+      "title": "This is post 6 of 6",
+      "author": {
+        "name": "Brad",
+        "sirname": "Marshall"
+      },
+      "desc": "Now they’re stepping down, and the new CEO is focused on saving the business.",
+      "content": "Methodically scouring every link on a website for a conference half a world away. Hikvision, the world’s largest security camera manufacturer, was hosting the event—the 2018 AI Cloud World Summit—in its hometown of Hangzhou, a city of about 10 million people not far from Shanghai. Honovich, the founder of a small trade publication that covered video surveillance technology, wanted to find out what the latest Hikvision gear could do.He zeroed in on one section of the conference agenda titled “Eco-Friendly, Peaceful, Relaxed” and found a description of an AI-powered system installed around Mount Tai, a historically sacred mountain in Shandong. A video showed Hikvision cameras pointed at tourists climbing the thousands of stone steps leading to the famous peak. Piano music played as a narrator explained, in Mandarin with English subtitles, that the cameras were there “to identify all visitors to ensure the safety of all.” The video cut to a shot of a computer screen, and Honovich hit pause. He saw a zoomed-in view of one visitor’s face. Below it was data that the camera’s AI had inferred. Honovich downloaded the video and took screenshots of the computer screen, for safekeeping. ",
+      "timestamp": 345673564123,
+      "imgUrl": "/assets/images/post2.png",
+      "category": "business"
     }
   ]
 }
