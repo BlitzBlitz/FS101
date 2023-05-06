@@ -52,6 +52,8 @@
 }
 .sing-in-btn {
   padding: 0 1em;
+  text-decoration: none;
+  color: black;
 }
 
 .btn-div {

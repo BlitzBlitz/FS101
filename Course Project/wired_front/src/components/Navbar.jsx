@@ -48,7 +48,9 @@ function Navbar({ isSideMenuOpen, setIsSideMenuOpen }) {
         </div>
       </div>
       <div className="sign-div">
-        <a className="sing-in-btn">SIGN IN</a>
+        <Link to={"/login"} className="sing-in-btn">
+          SIGN IN
+        </Link>
         <div className="btn-div">
           <a href="#" className="bg-blue btn">
             SUBSCRIBE

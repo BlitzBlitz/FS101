@@ -3,20 +3,46 @@ import Card from "../components/Card";
 import "./Search.css";
 
 export default function Search() {
-  const [posts, setPosts] = useState();
+  const [posts, setPosts] = useState([]);
   const [url, setUrl] = useState("http://localhost:3000/posts");
   const [keyword, setKeyword] = useState("");
 
-  useEffect(() => {
-    console.log("Fetching");
-    console.log(posts);
-    fetch(`${url}?title=${keyword}`)
+  function search(event) {
+    event.preventDefault();
+    fetch(`${url}?desc_like=${keyword}`)
       .then((response) => response.json())
       .then((data) => setPosts(data))
       .catch((error) => console.log(error));
-  }, [url, keyword]);
-  function search(event) {
-    event.preventDefault();
+  }
+  function sort(event) {
+    const sortBy = event.target.value;
+    console.log(sortBy);
+    let sortFunction;
+    if (sortBy === "name") {
+      sortFunction = (post1, post2) => {
+        if (post1.title > post2.title) {
+          return 1;
+        } else if (post1.title < post2.title) {
+          return -1;
+        }
+        return 0;
+      };
+    } else {
+      sortFunction = (post1, post2) => {
+        if (post1.timestamp > post2.timestamp) {
+          return 1;
+        } else if (post1.timestamp < post2.timestamp) {
+          return -1;
+        }
+        return 0;
+      };
+    }
+    setPosts((prevPost) => {
+      const sorted = prevPost.sort(sortFunction);
+      const deepCopy = [...sorted]; //to trigger an UI update
+      return deepCopy;
+    });
+    console.log(posts);
   }
   return (
     <div className="padding-t-5">
@@ -33,14 +59,14 @@ export default function Search() {
             />
           </div>
           <button type="submit">Search</button>
+          <div>
+            <span>Sort by</span>
+            <select name="" id="" onChange={(event) => sort(event)}>
+              <option value="name">Name</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
         </form>
-        <div>
-          <span>Sort by</span>
-          <select name="" id="">
-            <option value="">Relevance</option>
-            <option value="">Newest</option>
-          </select>
-        </div>
       </div>
       <div className="card-container column">
         {posts &&

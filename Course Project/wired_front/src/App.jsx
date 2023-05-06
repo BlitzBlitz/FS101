@@ -6,6 +6,8 @@ import Search from "./pages/Search";
 import SideMenu from "./components/SideMenu";
 import { useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Post from "./pages/Post";
 
 function App() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -31,6 +33,12 @@ function App() {
           </Route>
           <Route path="/search">
             <Search></Search>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/post/:postId">
+            <Post></Post>
           </Route>
           <Route path="/*">
             <Home></Home>

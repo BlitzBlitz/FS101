@@ -52,7 +52,7 @@ export default function SideMenu({ setIsSideMenuOpen }) {
         {categories.map((category) => (
           <li key={category.id}>
             <Link
-              to={`category/${category.title}`}
+              to={`/category/${category.title}`}
               onClick={() => setIsSideMenuOpen(false)}
             >
               {category.title.charAt(0).toUpperCase() + category.title.slice(1)}

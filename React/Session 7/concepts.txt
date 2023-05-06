@@ -1,0 +1,26 @@
+
+Components  -> used to avoid template(html+css) repetition
+Hooks       -> used to avoid state modification repetition
+
+React Hooks
+    What?
+    Why?
+    How?
+
+Some React Hooks
+    useState
+    useEffect
+    useRef      (document.getElementById())
+    useContext  (global state to avoid prop drilling)
+
+Making our own Hooks
+    To avoid code repetition and write reusable code
+
+Making a general modal
+    Child props 
+
+Styling and Responsivness (Recap)
+
+
+Query Parameters
+    useLocation

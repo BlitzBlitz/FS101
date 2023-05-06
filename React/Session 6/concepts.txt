@@ -18,8 +18,7 @@ Route Parameters
     useParams
 
 Dynamic ridirection
+    useHistory
     the page is not redirected by a link element but from JS
 
-Query Parameters
-    useLocation
 

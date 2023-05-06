@@ -73,6 +73,7 @@ export default function Category() {
       viewCounter: 5,
     },
   ]);
+  console.log(history);
   useEffect(() => {
     fetch(`http://localhost:3000/posts?category=${categoryTitle}`)
       .then((response) => response.json())
