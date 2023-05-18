@@ -1,0 +1,32 @@
+Fetching data
+    1. Export the logic of fetching data in a costum hook
+        Because we repeat the code for fetching data in many Components
+    2. Make sure to return data, isLoading, error
+    
+Display the palceholders
+    1. Get "isLoading" from the useFetch hook
+    2. Use this varaible to display palceholders or not 
+    3. It`s better to have a seperate component for the palceholder
+            EX: Card -> CardPlaceholder
+        However you can use the same component with a little bit of a tweek
+
+RECAP: 
+        How do components pass data between each other
+
+        1. Data Prop
+                Parent -> Child (data props)            The parent wants to change the state of the child
+        2. Function Prop
+                Child -> Parent (function props)        The child wants to change the state of the parent  
+
+NEW:
+        3. Template props
+                Parent -> Child (template props)        When the parent want to change the innerHTML of the child
+                    by using the "children" prop, which is reserved for the template prop only
+
+Rules of Thumb:
+    0. Make it work then refactor you code following the steps below
+
+    1. If you repeat the code at the state area(first part) of a component 
+            => export the logic into a custom hook
+    2. If you repeat yourself at the template area(second part[after return])
+            => export the html into a custom component

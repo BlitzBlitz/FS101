@@ -1,37 +1,34 @@
 import Card from "./Card";
 import "./Trending.css";
-import { useState, useEffect } from "react";
-// import { useFetch } from "../hooks/useFetch";
+import { useFetch } from "../hooks/useFetch";
+import CardPlaceholder from "./CardPlaceholder";
 export default function Trending() {
-  const [trendingStories, setTrendingStories] = useState([]);
-  // const posts = useFetch("http://localhost:3000/posts&_limit=4");
-  // setTrendingStories(posts);
-  useEffect(() => {
-    fetch("http://localhost:3000/posts?_limit=4")
-      .then((response) => response.json())
-      .then((data) => {
-        setTrendingStories(data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  const { data: trendingStories, isLoading } = useFetch(
+    "http://localhost:3000/posts?_limit=4"
+  );
+  const loadingCard = [1, 2, 3, 4];
 
   return (
     <div className="trending-stories">
       <div className="card-container">
         <h1 className="section-header">Trending Stories</h1>
-        {trendingStories &&
-          trendingStories.map((post) => {
-            return (
-              <Card
-                key={post.id}
-                postOfCard={post}
-                isDescHidden={false}
-                isCategoryHidden={false}
-                direction="column"
-                classes="card-trending"
-              ></Card>
-            );
-          })}
+        {isLoading
+          ? loadingCard.map((index) => (
+              <CardPlaceholder direction="column" key={index} />
+            ))
+          : trendingStories &&
+            trendingStories.map((post) => {
+              return (
+                <Card
+                  key={post.id}
+                  postOfCard={post}
+                  isDescHidden={false}
+                  isCategoryHidden={false}
+                  direction="column"
+                  classes="card-trending"
+                ></Card>
+              );
+            })}
       </div>
     </div>
   );

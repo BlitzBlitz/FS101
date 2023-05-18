@@ -8,10 +8,12 @@ import { useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Post from "./pages/Post";
+import { Modal } from "./components/Modal";
+import Subscribe from "./components/Subscribe";
 
 function App() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
-
+  const [isModalOpen, setIsModalOpen] = useState(true);
   return (
     <div className="app">
       <BrowserRouter>
@@ -24,24 +26,29 @@ function App() {
         {isSideMenuOpen && (
           <SideMenu setIsSideMenuOpen={setIsSideMenuOpen}></SideMenu>
         )}
+        {isModalOpen && (
+          <Modal setIsModalOpen={setIsModalOpen}>
+            <Subscribe direction={"column"}></Subscribe>
+          </Modal>
+        )}
         <Switch>
           <Route exact path="/">
-            <Home></Home>
+            <Home />
           </Route>
           <Route path="/category/:categoryTitle">
-            <Category></Category>
+            <Category />
           </Route>
           <Route path="/search">
-            <Search></Search>
+            <Search />
           </Route>
           <Route path="/login">
-            <Login></Login>
+            <Login />
           </Route>
           <Route path="/post/:postId">
-            <Post></Post>
+            <Post />
           </Route>
           <Route path="/*">
-            <Home></Home>
+            <Home />
           </Route>
         </Switch>
       </BrowserRouter>
