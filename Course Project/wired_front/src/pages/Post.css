@@ -1,8 +1,43 @@
 .post-page {
-  padding-top: 5em;
+  padding: 4em;
+  padding-top: 6em;
+  display: flex;
+}
+.post-page .recent-posts {
+  width: 30% !important;
+}
+.postContainer {
+  width: 70%;
 }
 .isPending * {
   background-color: gray;
   border: 2px solid red;
   padding: 2em;
+}
+.post-author {
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+
+.post-category {
+  margin: 0 1em;
+  letter-spacing: 0.2rem;
+}
+.post-title {
+  font-size: 4rem;
+}
+.post-desc {
+  font-size: 1.5rem;
+  width: 80%;
+  margin-bottom: 1.5em;
+}
+.my-2 {
+  margin: 2em 0;
+}
+
+.content-p {
+  width: 80%;
+  text-align: justify;
 }

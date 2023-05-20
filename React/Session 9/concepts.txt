@@ -1,0 +1,11 @@
+React Context
+
+    1. This is a global state which you can access in every component
+            In practice: It`s just an empty component with the state 
+    2. It can be used using a state or a reducer
+    3. 
+        a. Create a component that creates a context and exports the provider
+        a1. Wrap the App component with the ContextProvider @main.jsx
+        b. Create a state inside that component 
+        c. Pass this state and the setter to the Context.Provider so you get to use it elsewhere
+        d. Import the values in step c by using useContext at any component that you wish

@@ -3,3 +3,14 @@
   padding-top: 8em;
   display: flex;
 }
+.bg-colored {
+  background-image: url("/public/assets/images/art.png");
+  background-size: cover;
+  padding: 5em 8em;
+}
+
+@media (max-width: 850px) {
+  .home {
+    flex-direction: column;
+  }
+}

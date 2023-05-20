@@ -1,41 +1,51 @@
 import { useParams } from "react-router-dom";
 import "./Post.css";
-import { useEffect, useState } from "react";
+import { useFetch } from "../hooks/useFetch";
+import SidePostContainer from "../components/SidePostContainer";
+import Footer from "../components/Footer";
 export default function Post() {
   const { postId } = useParams();
-  const [post, setPost] = useState();
-  const [isPending, setIsPending] = useState(false);
-  useEffect(() => {
-    console.log(postId);
-    setIsPending(true);
-    fetch(`http://localhost:3000/posts?id=${postId}`)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data.at(0));
-        setPost(data.at(0));
-        setIsPending(false);
-      })
-      .catch((error) => console.log(error));
-  }, []);
+  const { data: posts, isLoading } = useFetch(
+    `http://localhost:3000/posts?id=${postId}`
+  );
   return (
-    <div className="post-page">
-      {/* {isPending && <h1>Loading...</h1>} */}
-      <div>
-        <div className={isPending ? "isPending" : "content"}>
-          <div>
-            <span className="author">
-              {post && post.author.name} {post && post.author.sirname}
-            </span>
-            <span>{post && post.category}</span>
-            <span>{post && post.timestamp}</span>
-          </div>
-          <h1>{post && post.title}</h1>
-          <p>{post && post.desc}</p>
+    <div>
+      <div className="post-page">
+        {/* {isPending && <h1>Loading...</h1>} */}
+        <div className="postContainer">
+          {posts &&
+            posts.map((post) => (
+              <div>
+                <div className={isLoading ? "isPending" : ""}>
+                  <div className="my-2">
+                    <span className="post-author">
+                      {post.author.name} {post.author.sirname}
+                    </span>
+                    <span className="post-category">
+                      {post.category.toUpperCase()}
+                    </span>
+                    <span className="post-time">
+                      {new Date(post.timestamp).toString()}
+                    </span>
+                  </div>
+                  <h1 className="post-title">{post.title}</h1>
+                  <p className="desc">{post.desc}</p>
+                </div>
+                <div className="post-image">
+                  <img src={post.imgUrl} alt="" />
+                </div>
+                {post.content.map((paragraph) => (
+                  <div>
+                    <p className="content-p">{paragraph}</p>
+                    <br />
+                  </div>
+                ))}
+              </div>
+            ))}
         </div>
-        <div className="image">
-          <img src={post && post.imgUrl} alt="" />
-        </div>
+        <SidePostContainer></SidePostContainer>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

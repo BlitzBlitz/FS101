@@ -10,27 +10,29 @@ export default function SidePostContainer() {
     <div className="recent-posts">
       <h1 className="section-header">Recent Posts</h1>
 
-      {isLoading
-        ? loadingCard.map((index) => (
-            <CardPlaceholder
-              direction="row"
-              isDescHidden={true}
-              isCategoryHidden={true}
-              key={index}
-            />
-          ))
-        : data &&
-          data.map((post) => {
-            return (
-              <Card
-                key={post.id}
-                postOfCard={post}
+      <div className="recent-post-container">
+        {isLoading
+          ? loadingCard.map((index) => (
+              <CardPlaceholder
+                direction="row"
                 isDescHidden={true}
                 isCategoryHidden={true}
-                direction="row"
-              ></Card>
-            );
-          })}
+                key={index}
+              />
+            ))
+          : data &&
+            data.map((post) => {
+              return (
+                <Card
+                  key={post.id}
+                  postOfCard={post}
+                  isDescHidden={true}
+                  isCategoryHidden={true}
+                  direction="row"
+                ></Card>
+              );
+            })}
+      </div>
     </div>
   );
 }

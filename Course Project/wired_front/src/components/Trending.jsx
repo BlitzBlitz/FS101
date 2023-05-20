@@ -12,23 +12,25 @@ export default function Trending() {
     <div className="trending-stories">
       <div className="card-container">
         <h1 className="section-header">Trending Stories</h1>
-        {isLoading
-          ? loadingCard.map((index) => (
-              <CardPlaceholder direction="column" key={index} />
-            ))
-          : trendingStories &&
-            trendingStories.map((post) => {
-              return (
-                <Card
-                  key={post.id}
-                  postOfCard={post}
-                  isDescHidden={false}
-                  isCategoryHidden={false}
-                  direction="column"
-                  classes="card-trending"
-                ></Card>
-              );
-            })}
+        <div className="trending-cards">
+          {isLoading
+            ? loadingCard.map((index) => (
+                <CardPlaceholder direction="column" key={index} />
+              ))
+            : trendingStories &&
+              trendingStories.map((post) => {
+                return (
+                  <Card
+                    key={post.id}
+                    postOfCard={post}
+                    isDescHidden={false}
+                    isCategoryHidden={false}
+                    direction="column"
+                    classes="card-trending"
+                  ></Card>
+                );
+              })}
+        </div>
       </div>
     </div>
   );

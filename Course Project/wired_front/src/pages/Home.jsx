@@ -4,6 +4,7 @@ import "./Home.css";
 import SidePostContainer from "../components/SidePostContainer";
 import Trending from "../components/Trending";
 import Footer from "../components/Footer";
+import Subscribe from "../components/Subscribe";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       </div>
       <Trending></Trending>
       <FeaturedContainer></FeaturedContainer>
+      <div id="subscribe" className="bg-colored ">
+        <Subscribe></Subscribe>
+      </div>
       <Footer></Footer>
     </>
   );

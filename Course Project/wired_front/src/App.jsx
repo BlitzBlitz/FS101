@@ -4,16 +4,18 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import Search from "./pages/Search";
 import SideMenu from "./components/SideMenu";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Post from "./pages/Post";
 import { Modal } from "./components/Modal";
 import Subscribe from "./components/Subscribe";
+import { useTheme } from "./hooks/useTheme";
 
 function App() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(true);
+  useTheme();
   return (
     <div className="app">
       <BrowserRouter>

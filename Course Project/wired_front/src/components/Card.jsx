@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Card.css";
 
 function Card({
@@ -11,8 +12,8 @@ function Card({
   let directionClass = direction === "column" ? "card" : "card-row";
   return (
     postOfCard && (
-      <a
-        href={"/posts.html?id=" + postOfCard.id}
+      <Link
+        to={`/post/${postOfCard.id}`}
         className={directionClass + " " + classes}
         id={postOfCard.id}
       >
@@ -28,7 +29,7 @@ function Card({
             {postOfCard.author.name + " " + postOfCard.author.sirname}
           </span>
         </div>
-      </a>
+      </Link>
     )
   );
 }

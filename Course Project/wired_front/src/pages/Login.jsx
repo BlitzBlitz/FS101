@@ -16,10 +16,11 @@ export default function Login() {
         <img src="/assets/images/login.png" alt="" />
       </div>
       <div className="form-container">
-        <h1>Sign in or create an account</h1>
+        <img className="logo" src="/assets/images/Wired.png" alt="" />
+        <h1 className="form-title">Sign in or create an account</h1>
         <form onSubmit={(event) => login(event)}>
           <label htmlFor="email">Email address</label>
-          <input type="email" />
+          <input type="email" placeholder="Email" />
           <button type="submit">CONTINUE WITH EMAIL</button>
         </form>
       </div>

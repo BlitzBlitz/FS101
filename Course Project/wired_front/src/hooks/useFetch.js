@@ -10,11 +10,12 @@ export const useFetch = (url) => {
       if (request.ok) {
         const data = await request.json();
         setIsLoading(false);
+        console.log(data);
         setData(data);
       }
     };
     fetchData();
   }, [url]);
   // return {data : data, isLoading : isLoading};
-  return {data, isLoading};
+  return { data, isLoading };
 };

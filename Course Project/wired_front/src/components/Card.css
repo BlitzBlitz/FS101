@@ -91,3 +91,20 @@
 .featured-sub-card:last-child {
   border: 0;
 }
+
+@media (max-width: 850px) {
+  .featured-card img {
+    width: 45% !important;
+    object-fit: cover;
+  }
+  .featured-card .d-column {
+    width: 55% !important;
+    margin: 0;
+  }
+  .featured-sub-card {
+    width: 30% !important;
+  }
+  .card img {
+    padding: 0 !important;
+  }
+}

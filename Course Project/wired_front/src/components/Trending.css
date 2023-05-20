@@ -1,6 +1,6 @@
 .trending-stories {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   position: relative;
   padding: 2em;
@@ -9,12 +9,23 @@
 .card-trending {
   width: 20%;
 }
-
+.trending-cards {
+  display: flex;
+}
 .card-container {
   border-top: 2px solid black;
-
   position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 5em;
+}
+
+@media (min-width: 550px) and (max-width: 850px) {
+  .trending-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-trending {
+    width: 100% !important;
+  }
 }

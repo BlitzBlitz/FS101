@@ -22,3 +22,9 @@
   grid-column: 2 / 4;
   grid-row: 1 / 4;
 }
+
+@media (max-width: 850px) {
+  .main-hero {
+    width: 100%;
+  }
+}
