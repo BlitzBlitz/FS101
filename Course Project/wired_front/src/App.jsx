@@ -22,13 +22,11 @@ function App() {
         <Navbar
           isSideMenuOpen={isSideMenuOpen}
           setIsSideMenuOpen={setIsSideMenuOpen}
-        ></Navbar>
-        {isSideMenuOpen && (
-          <SideMenu setIsSideMenuOpen={setIsSideMenuOpen}></SideMenu>
-        )}
+        />
+        {isSideMenuOpen && <SideMenu setIsSideMenuOpen={setIsSideMenuOpen} />}
         {isModalOpen && (
           <Modal setIsModalOpen={setIsModalOpen}>
-            <Subscribe direction={"column"}></Subscribe>
+            <Subscribe direction={"column"} />
           </Modal>
         )}
         <Switch>

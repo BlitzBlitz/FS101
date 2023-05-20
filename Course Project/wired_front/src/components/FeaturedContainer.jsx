@@ -19,7 +19,7 @@ export default function FeaturedContainer() {
             direction="row"
             isDescHidden={false}
             isCategoryHidden={false}
-            classes={"featured-card py-15"}
+            classes={"featured-card "}
           />
         ) : (
           featuredPost && (
