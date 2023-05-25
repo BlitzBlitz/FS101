@@ -1,9 +1,61 @@
-Intro into DB and DBMS
+Intro into DB and DBMS(mysql, postgreSQL, mangoDB, fireBase)
 Installing mySQL
+    Download mySQL Server
+    Palce at C:\Program Files\MySQL\
+    Add the path to the Environment Variables
+    Test it at CMD 'mysql --version'
+
 Creating db
+    
 Creating tabels
 Data Types
 CRUD 
 Selection 
 Wildcards
 
+
+Database    -> A file containing Data
+                    it can be a '.txt' file but tipically is a '.db' file
+
+DBMS        -> A software that help us CRUD from the '.db' file
+                * handles security
+                * backups
+                * importing/exporting
+                EX: mysql, postgeSQL, mongoDB, fireBase
+
+Databases Types:    SQL and NoSQL
+
+                    SQL they use the SQL language to commnicate with the '.db' file
+                    NoSQL they use a diffrent language 
+
+SQL Databases
+                    They store the data in rows and columns
+                        key     =>  columns
+                        values  =>  rows
+
+Query               A sentence that uses SQL Language
+                        EX: SELECT * FROM users;
+
+CRUD:               CREATE
+                        CREATE DATABASE db_name
+                        CREATE TABLE table_name
+                        INSERT INTO table_name VALUES()
+                    
+                    READ
+                        SHOW databases
+                        USE databas_name
+                        
+                        SELECT colums FROM tabel_name;
+                        SELECT * FROM posts LIMIT 3 OFFSET 4;
+
+                        SELECT * FROM posts WHERE column=value
+                        SELECT * FROM posts WHERE id IN(1,2,4);
+                        SELECT * FROM posts WHERE post_desc LIKE '%can%';
+                    
+                    UPDATE
+                        UPDATE posts SET title = 'Post A Updated' WHERE title = 'Post A';
+                        UPDATE posts SET img_url = "/public/assets/post1.png" WHERE id BETWEEN 1 AND 3;
+
+                    DELETE
+                        DELETE FROM posts WHERE id = 3;
+                        DROP TABLE table_name; 
