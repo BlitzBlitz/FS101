@@ -1,0 +1,9 @@
+Intro into DB and DBMS
+Installing mySQL
+Creating db
+Creating tabels
+Data Types
+CRUD 
+Selection 
+Wildcards
+
