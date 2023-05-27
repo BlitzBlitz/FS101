@@ -1,0 +1,19 @@
+1. Create a new table called "users" with the following columns:
+        id (INT), name (VARCHAR), email (VARCHAR), and age (INT), created_at (TIMESTAMP).
+2. Insert 10 new user into the "users" table
+
+3. Retrieve all the users from the "users" table.
+
+4. Update the age of the user with id 1 to 35.
+
+5. Delete the user with id 2 from the "users" table.
+
+6. Retrieve all users whose age is greater than or equal to 25.
+
+7. Retrieve the names and emails of users whose names start with the letter 'A'.
+
+8. Increment the age of all users by 1
+
+9. Update the email of the user with id 3 to 'newemail@example.com'.
+
+10. Count the number of users in the "users" table.

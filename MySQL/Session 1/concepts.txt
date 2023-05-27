@@ -36,6 +36,13 @@ SQL Databases
 Query               A sentence that uses SQL Language
                         EX: SELECT * FROM users;
 
+Constrains:
+                    Colums:
+                            NOT NULL
+                            AUTO_INCREMENT
+                            PRIMARY KEY
+                            DEFAULT default_value
+
 CRUD:               CREATE
                         CREATE DATABASE db_name
                         CREATE TABLE table_name
@@ -46,9 +53,9 @@ CRUD:               CREATE
                         USE databas_name
                         
                         SELECT colums FROM tabel_name;
-                        SELECT * FROM posts LIMIT 3 OFFSET 4;
+                        SELECT * FROM posts LIMIT 3 OFFSET 4;       //pagination
 
-                        SELECT * FROM posts WHERE column=value
+                        SELECT * FROM posts WHERE column=value      //search
                         SELECT * FROM posts WHERE id IN(1,2,4);
                         SELECT * FROM posts WHERE post_desc LIKE '%can%';
                     

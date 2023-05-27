@@ -1,0 +1,55 @@
+
+TABLE CRUD
+    CREATE TABLE
+    SHOW TABLES
+    *ALTER TABLE
+        Change the name of the table:
+            ALTER TABLE tabel_name RENAME TO new_table_name
+            ALTER TABLE tabel_name RENAME COLUMN column_name TO new_column_name
+        Add Constraints
+            ALTER TABLE ADD CONSTRAINT 
+    DROP TABLE
+RECAP:
+    ROW CRUD
+        INSERT
+        SELECT
+        UPDATE
+        DELETE
+
+Order By
+
+Agregate functions
+    Min, Max, AVG, Count, SUM
+
+Working with dates
+    1. get current date and time => now()
+    2. convert the date and format it
+            date(), year(), month(), day(),week(), dayOfWeek(), hour(), minutes(), seconds()
+            date_format()
+            datediff()
+            timediff()
+    3. Compare dates
+                =, <, >, BETWEEN
+
+
+Relations:
+    One To One                  students.passport_id        passports.student_id
+    One To Many                 posts.author_id             
+    Many To Many
+
+Relating 2 tabels
+    1. Create a new column which will hold the referece to the other tabel
+    2. Add a constaraint of Foreign Key that referece to the PRIMARY KEY of the other tabel
+    3. Whenever instering new data you have to include the referece to the other tabel
+
+    Careful: Foreign Keys must be UNIQUE colums at their tabels
+
+Relations CRUD
+
+    Joining tabels
+        
+        FROM    
+                tabel1 JOIN tabel2 ON foreign_key_tabel1_column = primary_key_tabel2_column
+                
+
+
