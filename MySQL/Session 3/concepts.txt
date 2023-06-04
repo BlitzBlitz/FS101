@@ -1,0 +1,38 @@
+RECAP:
+    TABLE CRUD
+        CREATE TABLE
+        SHOW TABLES
+        *ALTER TABLE
+            Change the name of the table:
+                ALTER TABLE tabel_name RENAME TO new_table_name
+                ALTER TABLE tabel_name RENAME COLUMN column_name TO new_column_name
+            Add Constraints
+                ALTER TABLE ADD CONSTRAINT 
+        DROP TABLE
+
+    ROW CRUD
+        INSERT
+        SELECT
+        UPDATE
+        DELETE
+
+Relations:
+    *We store the foreign_key at the many side
+    *Except for ManyToMany, when we have to use a intermediate table
+
+    One To One                  students.passport_id        passports.student_id
+    One To Many                 posts.author_id             
+    Many To Many                intermediate table
+
+ON DELETE
+ON UPDATE
+
+Indexes
+                
+Creating tables:
+        posts
+        authors
+        categories
+
+
+

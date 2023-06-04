@@ -42,6 +42,7 @@ Constrains:
                             AUTO_INCREMENT
                             PRIMARY KEY
                             DEFAULT default_value
+                            UNIQUE
 
 CRUD:               CREATE
                         CREATE DATABASE db_name
