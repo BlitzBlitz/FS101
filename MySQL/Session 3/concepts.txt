@@ -22,12 +22,16 @@ Relations:
 
     One To One                  students.passport_id        passports.student_id
     One To Many                 posts.author_id             
-    Many To Many                intermediate table
+    Many To Many                join/intermediate table
 
 ON DELETE
 ON UPDATE
 
 Indexes
+    Put indexes in the columns that your read(search) the most
+        EX: In your blog app you search by title 90% of searches
+            In your contact app you search by name 98% of seraches
+            In you shop app you search by product_code everytime 
                 
 Creating tables:
         posts

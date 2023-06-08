@@ -1,2 +1,35 @@
+https://dev.mysql.com/doc/sakila/en/sakila-installation.html
 
+Design the tables and write queries for the features below
 
+    Top Feautres:
+        User:
+            Any user:
+                See all the posts
+                    Today`s picks
+                    Most recent                 SELECT * FROM posts order by created_at desc Limit 3;
+                    Trending stories    
+                    Long readers        
+                    by tag
+                See 1 post                      SELECT * FROM posts where title = 'searching title';
+                Filter the post by category
+                Filter the post by date         SELECT * FROM posts Where created_at < '2020-10-10' LIMIT 10; 
+                Searching
+                    by title keyword            SELECT * FROM posts Where title LIKE '%keyword%' 
+                Subscribe(by email)
+
+            If logged in:
+                
+                CRUD a post (Create, Read, Update, Delete)
+
+                Add post to favourite
+                See all posts posts
+                Delete posts from favourite
+                See all viewed posts
+                Message other writers
+
+        Admin(Manage users):
+            CRUD Users/Posts
+            Delete a user / post
+            Ban a user/post (inactive)
+            Filter users/posts

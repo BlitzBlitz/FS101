@@ -6,10 +6,18 @@ Top Feautres:
     User:
         Any user:
             See all the posts
+                Today`s picks
+                Most recent
+                Trending stories
+                Long readers
+                by tag
+            See 1 post
             Filter the post by category
             Filter the post by date
+            Searching
+                by keyword
             Subscribe(by email)
-        
+
         If logged in:
             
             CRUD a post (Create, Read, Update, Delete)
