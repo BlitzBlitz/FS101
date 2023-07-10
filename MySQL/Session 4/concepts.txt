@@ -6,30 +6,91 @@ Design the tables and write queries for the features below
         User:
             Any user:
                 See all the posts
-                    Today`s picks
+                    Total Views                 SELECT users.* FROM users 
+                                                    JOIN view_post ON users.id = user_id
+                                                    JOIN posts ON posts.id = post_id
+                                                WHERE post_id = 3;
+
+
+                    Today`s picks               SELECT posts.* , count(posts.id) as view_count FROM posts 
+                                                    JOIN view_post ON posts.id = post_id
+                                                    WHERE created_at > todays_date
+                                                    GROUP BY post_id
+                                                    ORDER by view_count desc
+                                                    LIMIT 3;
                     Most recent                 SELECT * FROM posts order by created_at desc Limit 3;
-                    Trending stories    
-                    Long readers        
-                    by tag
+                    Trending stories            SELECT posts.* , count(posts.id) as view_count FROM posts 
+                                                    JOIN view_post ON posts.id = post_id
+                                                    WHERE week(created_at) = week(now())
+                                                    GROUP BY post_id
+                                                    ORDER by view_count desc
+                                                    LIMIT 5;
+                    Long readers                SELECT count(post_content.*) as number_of_p, posts.* FROM posts 
+                                                    JOIN post_content ON posts.id = post_id
+                                                    WHERE  number_of_p > 5;
+                    
+                                                SELECT count(*) FROM post_content WHERE post_id = 2
+
+                    by tag(tag_name)            SELECT * FROM posts
+                                                    JOIN post_tag ON posts.id = post_id
+                                                    JOIN tags ON tags.id = tag_id
+                                                    WHERE tags.title = tag_name
+                                                    ORDER BY created_at
+                                                    LIMIT posts_per_page OFFSET page * post_per_page;
+
+                                                SELECT tags.title FROM posts
+                                                    JOIN post_tag ON posts.id = post_id
+                                                    JOIN tags ON tags.id = tag_id
+                                                    WHERE posts.title = post_title
+                                                    ORDER BY created_at
+                                                    LIMIT posts_per_page OFFSET page * post_per_page;
+
+
                 See 1 post                      SELECT * FROM posts where title = 'searching title';
                 Filter the post by category
                 Filter the post by date         SELECT * FROM posts Where created_at < '2020-10-10' LIMIT 10; 
                 Searching
                     by title keyword            SELECT * FROM posts Where title LIKE '%keyword%' 
-                Subscribe(by email)
+                Subscribe(by email)             INSERT INTO subscribed(email, created_at) VALUES ('test@test.com', now()) 
 
             If logged in:
                 
                 CRUD a post (Create, Read, Update, Delete)
 
-                Add post to favourite
-                See all posts posts
-                Delete posts from favourite
-                See all viewed posts
-                Message other writers
+                Add post to favourite(my_user_id, my_post_id)           INSERT INTO favourite_posts(user_id, post_id) VALUES (my_user_id, my_post_id);
+                Remove post from favourite(my_user_id, my_post_id)      DELETE FROM favourite_posts WHERE post_id = my_post_id AND user_id = my_user_id;               
+                
+                Show all posts from favourite(my_user_id)               SELECT posts.* FROM posts 
+                                                                            JOIN favourite_posts ON posts.id = post_id
+                                                                            JOIN users ON users.id = user_id
+                                                                        WHERE user_id = my_user_id
+                                                                        LIMIT 5
+
+                Show the number of users that favourited a post         SELECT count(*) FROM users 
+                                                                            JOIN favourite_posts ON users.id = user_id
+                                                                            JOIN posts ON posts.id = post_id
+                                                                        WHERE post_id = my_post_id;
+
+
+
+                See all posts                                    SELECT * FROM posts OFFSET page_index * posts_per_page LIMIT posts_per_page;
+                See all the user`s posts(user_id)                SELECT * FROM posts WHERE author_id = user_id LIMIT 10;
+                See all viewed posts                             SELECT posts.* FROM posts 
+                                                                    JOIN view_post ON posts.id = post_id
+                                                                    JOIN users ON users.id = user_id
+                                                                    WHERE users.id = 1;  
+                Message other writers                            
 
         Admin(Manage users):
-            CRUD Users/Posts
-            Delete a user / post
-            Ban a user/post (inactive)
+            CRUD Users
+                READ                        SELECT * FROM users LIMIT 10;
+                UPDATE                      
+                    BAN(user_id)            UPDATE users SET is_Banned = false WHERE user.id = user_id; 
+                    UNBAN(user_id)          UPDATE users SET is_Banned = true WHERE user.id = user_id;
+            CRUD Posts
+                READ                        SELECT * FROM posts LIMIT 10;
+                UPDATE                      
+                    BAN(user_id)            UPDATE posts SET is_Banned = false WHERE post.id = post_id; 
+                    UNBAN(user_id)          UPDATE posts SET is_Banned = true WHERE post.id = post_id;
             Filter users/posts
+                SELECT * FROM posts WHERE created_at > '2020-12-10';

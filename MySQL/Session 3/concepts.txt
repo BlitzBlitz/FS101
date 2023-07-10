@@ -17,7 +17,7 @@ RECAP:
         DELETE
 
 Relations:
-    *We store the foreign_key at the many side
+    *We store the foreign_key at the MANY side
     *Except for ManyToMany, when we have to use a intermediate table
 
     One To One                  students.passport_id        passports.student_id

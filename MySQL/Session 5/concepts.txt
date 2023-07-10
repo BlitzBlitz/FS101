@@ -1,0 +1,7 @@
+Review
+    JOIN
+    Types of joins
+    Building queries
+    Grouping
+SQL stored function
+SQL stored procedures
