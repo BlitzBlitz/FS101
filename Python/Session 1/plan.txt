@@ -1,0 +1,117 @@
+Python
+    What
+        Compiled vs Interpreted
+        General purpose
+        close to english
+    Why
+        Libraries
+        Community
+    How
+        Download and install   PYTHON.ORG
+        Docs https://docs.python.org/3.11/tutorial/index.html
+        keywords
+        https://survey.stackoverflow.co/2022
+
+
+!Everything is an object in python!
+
+Comments and Data Types
+
+    #this is a comment
+    Data types
+        a. Integers
+        b. Float 
+        c. Complex
+        d. Boolean
+        f. String
+    Taking input
+        x = input('insert a number')
+    Converting 
+        type(10)
+        type('10')
+        int(10.4)
+        str(10)
+        float(10)
+    Operators
+        a. arithmetic               +, -, *, /, %, **, //
+        b. comparision              ==, !=, >, <, >=, <=
+        c. logical                  and, or, not
+        d. bitwise                  &, |, ^, ~, <<, >>
+        e. increment/decrement      ++, --
+    Branching
+        [indenting does matter in Python]
+        [Python hates these '{}' and loves these ':']
+        
+        if x > 10:  
+            print('I am greater than ten')
+        elif x<10:
+            print('I am lower than ten')
+        else:
+            print('I am equal to ten')
+    Looping
+        for count in range(10):
+            print('hello' + count)
+    Functions:
+        def addTwoNumber():
+            return 2+3;
+        built in functions  docs.python.org/3
+        string functions
+
+
+Exercise 1:
+Write a Python program that checks if a given number is positive, negative, or zero.
+
+Exercise 2:
+Write a Python program that takes a year as input and determines whether it is a leap year or not.
+
+Exercise 3:
+Write a Python program that checks if a given number is even or odd.
+
+Exercise 4:
+Write a Python program that takes three numbers as input and finds the largest among them.
+
+Exercise 5:
+Write a Python program that takes the length and breadth of a rectangle as input and calculates its area. If the area is greater than 100, print "Large Rectangle," otherwise print "Small Rectangle."
+
+Exercise 6:
+Write a Python program that takes a character as input and checks if it is a vowel or a consonant.
+
+Exercise 7:
+Write a Python program that takes a number as input and checks if it is a prime number or not.
+
+Exercise 8:
+Write a Python program that takes a grade (percentage) as input and prints the corresponding letter grade (A, B, C, D, or F) based on the following conditions:
+
+A: 90% and above
+B: 80% - 89%
+C: 70% - 79%
+D: 60% - 69%
+F: Below 60%
+Exercise 9:
+Write a Python program that takes a number as input and checks if it is a palindrome (reads the same forwards and backwards) or not.
+
+Exercise 10:
+Write a Python program that takes a month (1-12) as input and prints the corresponding season ("Spring," "Summer," "Autumn," or "Winter")
+
+Write a program that simulates coin tossing. For each toss of the coin the
+program should print Heads or Tails. Let the program toss the coin 100 times, and count the number of times each side of the coin appears. Print the results. The program should call a separate function flip that takes no arguments and returns 0 for tails and 1 for heads. [Note: If the program
+realistically simulates the coin tossing, then each side of the coin should appear approximately half
+the time for a total of approximately 50 heads and 50 tails.]
+
+(Reversing Digits) Write a function that takes an integer value and returns the number with
+its digits reversed. For example, given the number 7631, the function should return 1367.
+
+Exercise 6:
+Write a Python program that takes a list of words as input and prints the length of each word using a for loop.
+
+Exercise 7:
+Write a Python program that takes a string as input and counts the occurrence of each character using a for loop.
+
+Exercise 8:
+Write a Python program that takes a list of numbers as input and prints the largest and smallest numbers using a for loop.
+
+Exercise 9:
+Write a Python program that takes a number as input and checks if it is a prime number using a while loop.
+
+Exercise 10:
+Write a Python program that takes a list of strings as input and prints the strings in reverse order using a for loop.
