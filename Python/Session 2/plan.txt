@@ -1,0 +1,92 @@
+String methods
+    .upper()
+    .lower()
+    .title()
+    .rstrip()
+Strings are like lists but immutable
+Escape characters
+    '\t'
+    '\n'
+    '\''
+
+2.3. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric,
+would you like to learn some Python today?”
+2-4. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
+2-5. Famous Quote: Find a quote from a famous person you admire. Print the
+quote and the name of its author. Your output should look something like the
+following, including the quotation marks:
+Albert Einstein once said, “A person who never made a
+mistake never tried anything new.”
+2-6. Famous Quote 2: Repeat Exercise 2-5, but this time store the famous person’s name in a variable called famous_person. Then compose your message
+and store it in a new variable called message. Print your message.
+2-7. Stripping Names: Store a person’s name, and include some whitespace
+characters at the beginning and end of the name. Make sure you use each
+character combination, "\t" and "\n", at least once.
+Print the name once, so the whitespace around the name is displayed.
+Then print the name using each of the three stripping functions, lstrip(),
+rstrip(), and strip().
+
+The math module
+
+Lists/Arrays
+
+    CRUD
+    Create:
+        students = ["Anna", "Brad", "Ron"]
+        stufs = ["Anna", 1, 2.3, true]
+    Read:
+        len(students)
+
+        students[2]
+        students[-1]
+        students[0:2] => ["Anna", "Brad"]
+
+        for student in students
+            print(student)
+    Update
+        students[0] = 'Changed'
+        .append('New')
+        .insert(2,'New 2')
+        .sort()
+        .reverse()
+    Delete
+        del student[1]
+        students.pop(1)             deleting by index
+        students.remove("Anna")     deleting by value[only first occurrence]
+Tuples
+    Usecases:
+        1. To return more than 1 value from a function
+        2. When using constants(using single element tuples)    
+            mySingleElementTuple = ("Single",)
+
+
+Exercise 1: Sum of Elements
+Write a function that takes a list of numbers as input and returns the sum of all the elements.
+
+Exercise 2: Maximum Element
+Write a function that takes a list of numbers as input and returns the maximum element in the list.
+
+Exercise 3: Reverse a List
+Write a function that takes a list as input and returns a new list with the elements in reverse order.
+
+Exercise 4: Remove Duplicates
+Write a function that takes a list as input and returns a new list with all the duplicate elements removed, while preserving the original order.
+
+Exercise 5: List Comprehension
+Write a function that takes a list of numbers as input and returns a new list containing only the even numbers from the original list, using list comprehension.
+
+Exercise 6: Common Elements
+Write a function that takes two lists as input and returns a new list containing the common elements between the two lists.
+
+Exercise 7: List Sorting
+Write a function that takes a list of strings as input and returns a new list with the strings sorted in alphabetical order.
+
+Exercise 8: Matrix Transposition
+Write a function that takes a matrix (a list of lists) as input and returns a new matrix that is the transpose of the original matrix.
+
+Exercise 9: List Manipulation
+Write a function that takes a list of numbers as input and returns a new list where each element is multiplied by 2.
+
+Exercise 10: Palindrome Check
+Write a function that takes a string as input and returns True if it is a palindrome (reads the same forwards and backwards), and False otherwise.
+

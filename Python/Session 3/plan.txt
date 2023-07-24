@@ -1,0 +1,28 @@
+OOP -> Object Oriented Programming
+    [is programming paradime -> a form of organizing our code into Classes]
+Classes = attributes + actions
+        = values + functions
+
+Classes = new custom type
+Object  = variable instanciated from the class
+
+
+Variables
+Functions
+Classes
+Package = A banch of Classes
+Library / Framework = A banch of Packages
+
+Library -> A banch of Packages [no rules enforced]
+Framework -> A banch of Packages [rules enforced to do a certain thing]
+
+Classes vs Objects
+
+One Class -> Many Objects
+
+Inheritance 
+    Child -> Parent relationship
+    The Child will inherite all the attributes and actions of the Parent(Base)
+
+Composition
+    Puting objects inside other objects
