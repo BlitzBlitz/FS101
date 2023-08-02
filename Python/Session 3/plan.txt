@@ -6,19 +6,25 @@ Classes = attributes + actions
 Classes = new custom type
 Object  = variable instanciated from the class
 
+How we organise code?
 
-Variables
-Functions
-Classes
-Package = A banch of Classes
-Library / Framework = A banch of Packages
+    Variables
+    Functions
+    --------------------------------------->Functional Programming
+    Classes
+    --------------------------------------->OOP
+    Package = A banch of Classes
+    Library / Framework = A banch of Packages
 
-Library -> A banch of Packages [no rules enforced]
-Framework -> A banch of Packages [rules enforced to do a certain thing]
+Library -> A banch of Packages [no rules enforced]                          REACT
+Framework -> A banch of Packages [rules enforced to do a certain thing]     ANGULAR, DJANGO
 
 Classes vs Objects
 
-One Class -> Many Objects
+    One Class -> Many Objects
+
+Constructors
+    Special methods that help to build the object
 
 Inheritance 
     Child -> Parent relationship
@@ -26,3 +32,6 @@ Inheritance
 
 Composition
     Puting objects inside other objects
+
+Polymorphism
+    Treating a child class as its parent class
