@@ -1,0 +1,84 @@
+API Concepts:
+    REST, SOAP, GraphQL
+    HTTP 
+    HTTP Methods
+    HTTP Codes
+    Statelessness
+    Endpoints
+
+    wired-front         -> http://127.0.0.1:3000
+
+                            http://127.0.0.1:8000/post [GET]
+                            http://127.0.0.1:8000/post [POST]
+
+    wired-back          -> http://127.0.0.1:8000
+
+DRF
+    What does DRF bring to the table
+        Handling HTTP requests
+        ORM
+        Authentication
+    How
+        Create a venv
+            python -m venv venv
+        Activate
+            venv/Scripts/activate
+        Install dependencies(What are dependencies and pip?)
+            pip install django
+        Create new app
+            django-admin startproject core .
+            python manage.py startapp blog
+            python manage.py startapp blog_api
+        Connecting everything with urls
+            path('',include('blog.ulrs', namespace='blog'))
+            path('api/',include('blog_api.ulrs', namespace='blog'))
+        Add apps to settings
+        Add templates folder to templates path
+
+        Creating Models
+
+        Django admin
+            
+        Serializers
+            Formating different types of data(typicaly JSON) to objects and vice-versa
+
+What is a Pattern
+    Design Patterns
+        Proven ways to solve common programming problems
+        Design Patterns (the gang of 4)
+    
+    MVC Pattern
+        Model       -> Reprents the data
+        View        -> Reprents the UI
+        Controller  -> Handles requests(Connects Model and View)
+
+            iAmAController('/posts?today=true', getPostsFromDb())
+            getPostsFromDb(){
+                //  get the model object
+                //  convert from Json to object
+                //  modelObject.fireQuery(object)
+                //  get the result
+                //  convert it to JSON
+                //  return result
+            }
+            
+             
+    MVT Pattern 
+        Model       -> Reprents the data
+        View        -> Handles requests(Connects Model and View)
+        Template    -> Reprents the UI
+
+Back end Apps
+    1. Server Side Rendering
+        the View(Controller) returns a .html file 
+    2. API
+        the View(Controller) returns a JSON object 
+
+How Django Works
+    1. Find the path
+    2. Run the View(handler)
+    3. Return a result(JSON/HTML)
+Steps for creating Models
+    1. Create the model class
+    2. Make a migration using manage.py
+    3. Migrate using manage.py

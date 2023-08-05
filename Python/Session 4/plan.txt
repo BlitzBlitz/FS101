@@ -6,31 +6,3 @@ Polymorphism
 Try catch/except
 File Handling
 
-API Concepts:
-    REST
-    HTTP 
-    HTTP Methods
-    HTTP Codes
-    Statelessness
-    Endpoints
-DRF
-    What does DRF bring to the table
-        Handling HTTP requests
-        ORM
-        Authentication
-    How
-        Create a venv
-            python -m venv venv
-        Activate
-            venv/Scripts/activate
-        Install dependencies(What are dependencies and pip?)
-            pip install django
-        Create new app
-            django-admin startproject core .
-            python manage.py startapp blog
-            python manage.py startapp blog_api
-What is a Pattern
-
-    MVC Pattern
-
-    MVT Pattern
