@@ -25,3 +25,7 @@ Back end Apps
         the View(Controller) returns a .html file 
     2. API
         the View(Controller) returns a JSON object
+
+https://jairvercosa.medium.com/manger-vs-query-sets-in-django-e9af7ed744e0
+https://docs.djangoproject.com/en/4.2/topics/db/queries/
+https://docs.djangoproject.com/en/4.2/ref/models/querysets
