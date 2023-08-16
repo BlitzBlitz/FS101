@@ -1,0 +1,27 @@
+MVC and MVT review
+
+
+Models and DB
+    1. Models and Relations
+        *creating a relation before model declaration
+        *taking advantage of django models
+    2. Model managers
+        CRUD with managers
+        RawQueries with RawSQLManager
+
+Serializers
+    What
+    Why
+    How
+
+Views(Controllers)
+    CRUD 
+        get, post, put, delete
+
+Urls
+
+Back end Apps
+    1. Server Side Rendering
+        the View(Controller) returns a .html file 
+    2. API
+        the View(Controller) returns a JSON object

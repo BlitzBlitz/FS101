@@ -65,7 +65,7 @@ What is a Pattern
              
     MVT Pattern 
         Model       -> Reprents the data
-        View        -> Handles requests(Connects Model and View)
+        View        -> Handles requests(Connects Model and Template)
         Template    -> Reprents the UI
 
 Back end Apps
@@ -78,6 +78,7 @@ How Django Works
     1. Find the path
     2. Run the View(handler)
     3. Return a result(JSON/HTML)
+    
 Steps for creating Models
     1. Create the model class
     2. Make a migration using manage.py
