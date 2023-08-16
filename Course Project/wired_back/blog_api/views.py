@@ -6,10 +6,10 @@ from blog_api.serializers import PostSerializer
 
 class TestView(APIView):
 
-    def get(self,request):
+    def get(self):
         print("Hello World")
         return Response(status=status.HTTP_200_OK)
-    def post(self,request):
+    def post(self):
         print("Hello World from POST")
         return Response(status=status.HTTP_200_OK)
     #talk to DB
