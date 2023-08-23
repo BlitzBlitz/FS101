@@ -5,7 +5,9 @@ import CardPlaceholder from "./CardPlaceholder";
 export default function Hero() {
   // const fetchInfo = useFetch("http://localhost:3000/posts?_limit=3");
   // const {data, isLoading} = {data, isLoading}; => const data = fetchInfo.data, const data = fetchInfo.isLoading;
-  const { data, isLoading } = useFetch("http://localhost:3000/posts?_limit=3");
+  const { data, isLoading } = useFetch(
+    "http://localhost:8000/api/posts?limit=5"
+  );
   const loadingCard = [1, 2, 3];
   return (
     <div className="main-hero">

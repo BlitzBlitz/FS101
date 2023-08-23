@@ -1,0 +1,12 @@
+Django Manager and custom managers
+
+Build all endpoints and their Views
+
+Parsers
+Handling file uploads
+
+    1. the file gets posted from the front-end as 0s and 1s together with the format
+    2. we recieve this file at our View(handler)
+    3. we save this file using any io package
+    4. we save the url of the file into the DB
+     
