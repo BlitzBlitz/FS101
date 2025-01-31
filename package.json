@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "date-fns": "^2.29.3",
+    "fs101": "file:",
+    "json-server": "^1.0.0-alpha.23",
     "moment": "^2.29.4",
     "react-router-dom": "^6.11.1"
   },

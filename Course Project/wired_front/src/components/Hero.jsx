@@ -6,7 +6,7 @@ export default function Hero() {
   // const fetchInfo = useFetch("http://localhost:3000/posts?_limit=3");
   // const {data, isLoading} = {data, isLoading}; => const data = fetchInfo.data, const data = fetchInfo.isLoading;
   const { data, isLoading } = useFetch(
-    "http://localhost:8000/api/posts?limit=5"
+    "http://localhost:8000/api/posts?limit=3"
   );
   const loadingCard = [1, 2, 3];
   return (

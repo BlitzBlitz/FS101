@@ -17,7 +17,7 @@ function Card({
         className={directionClass + " " + classes}
         id={postOfCard.id}
       >
-        <img src={postOfCard.img_url} alt="" />
+        <img src={"http://127.0.0.1:8000/" + postOfCard.img_url} alt="" />
         <div className="d-column content">
           <span className={isCategoryHidden ? "hidden" : "category"}>
             {/* {postOfCard.category.toUpperCase()} */}

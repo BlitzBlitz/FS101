@@ -7,15 +7,14 @@ CRUD
 Create 
     1. Take the date from the user (using a form), and a pop-up.
     2. Create a new object with this data. (Make sure to create a unique data ID)
-    2.5 Make a POST request to the backend.
-    3. Add this object to the array. (aka the state).
+    2. Make a POST request to the backend.
+    3. Get the data from the response of the POST request
+            Add this object to the array. (aka the state).
     4. Update the UI. (UI should be in sync with the state.)
         Example:
-        Wipe out all the connect of the card container.
+        Wipe out all the content of the card container.
         display all the todos once again.
-
-
-
+        
 Read
     0. decalre the state (tipically an array at the top of the js file)
     1. fetch the date from the backend. 
@@ -34,7 +33,7 @@ Update
     2. Display a form field with the data of the element that you want to Update.
     3. Follow create steps:
         1. Take the date from the user (using a form), and a pop-up.
-        1.5 Make a PUT request to the backend including the ID.
+        1.5 Make a PUT/PATCH request to the backend including the ID.
         2. Update the object corresponding to the ID.
         3. Update this object to the array. (aka the state).
         4. Update the UI. (UI should be in sync with the state.)
@@ -42,7 +41,7 @@ Update
 
 Delete
     1. Make sure that each HTML element that you want to Delete has an ID.
-    2. Make a Delete request to the backend, which includes the ID.
+    2. Make a DELETE request to the backend, which includes the ID.
     3. Delete the element from the state.
     4. Update the UI. 
 
